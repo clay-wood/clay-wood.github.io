@@ -6,9 +6,9 @@ htfcss: cmbx  font-weight: bold;
 htfcss: cmbxsl  font-weight: bold; font-style: oblique;
 htfcss: cmmi font-style: italic;
 htfcss: cmmib font-style: italic; font-weight: bold;
-File: testing.html
-File: testing.css
-File: testing.tmp
+File: index.html
+File: index.css
+File: index.tmp
 Css: p{margin-top:0;margin-bottom:0}
 Css: p.indent{text-indent:0;}
 Css: p + p{margin-top:1em;}
@@ -166,7 +166,8 @@ Css: span#textcolor3{color:#FF0000}
 Css: span#textcolor4{color:#FF0000}
 Css: span#textcolor5{color:#FF0000}
 Css: span#textcolor6{color:#0000FF}
-File: vessel_config.png
+l. 95 --- needs --- "rungs -q -dNOPAUSE -dBATCH -dusecropbox -sDEVICE=pngalpha -r300  -sOutputFile="vessel_config-.png" "vessel_config.pdf" " ---
+File: vessel_config-.png
 l. 102 --- needs --- "rungs -q -dNOPAUSE -dBATCH -dusecropbox -sDEVICE=pngalpha -r300  -sOutputFile="vessel_doors-.png" "vessel_doors.pdf" " ---
 File: vessel_doors-.png
 l. 111 --- needs --- "rungs -q -dNOPAUSE -dBATCH -dusecropbox -sDEVICE=pngalpha -r300  -sOutputFile="vessel_door_tighten-.png" "vessel_door_tighten.pdf" " ---
