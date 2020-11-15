@@ -1,7 +1,7 @@
 TEX           = pdflatex
 HTMLTEX       = htlatex
 HTMLTEX_FLAGS = 'html, NoFonts'
-CUSTOMCSS     = custom2.css
+CUSTOMCSS     = custom.css
 AUXFILES      = $(wildcard *.aux *.tmp *.toc *.xref *.lg *.idv *.dvi *.4tc *.4ct *.out *.log)
 SOURCES       = $(wildcard *.tex)
 PDFS          = $(SOURCES:.tex=.pdf)
