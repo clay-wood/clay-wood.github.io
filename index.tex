@@ -1,7 +1,4 @@
-%%tth:\begin{html}<title>Put the title here</title>\end{html}
-
-%\documentclass[letterpaper,10pt]{article}
-\documentclass[12pt]{article}
+\documentclass{article}
 \usepackage{gensymb}
 \usepackage{amsmath}  % improve math presentation
 \usepackage{graphicx} % takes care of graphic including machinery
@@ -9,25 +6,37 @@
 \usepackage{xcolor}
 \usepackage{setspace}
 \usepackage[final]{hyperref} % adds hyper links inside the generated pdf file
-%\hypersetup{
-%	colorlinks=true,       % false: boxed links; true: colored links
-%	linkcolor=blue,        % color of internal links
-%	citecolor=blue,        % color of links to bibliography
-%	filecolor=magenta,     % color of file links
-%	urlcolor=blue         
-%}
+\hypersetup{
+	colorlinks=true,       % false: boxed links; true: colored links
+	linkcolor=blue,        % color of internal links
+	citecolor=blue,        % color of links to bibliography
+	filecolor=magenta,     % color of file links
+	urlcolor=blue         
+}
 %++++++++++++++++++++++++++++++++++++++++
-%\graphicspath{{./figures/}}
-\usepackage[round]{natbib}
+\graphicspath{{./figs/}}
+%\usepackage[round]{natbib}
 
 \newcommand{\caution}{
 	\textbf{\textit{ \textcolor{red}{Use caution.} }}
 }
 
+\title{Pressure Vessel Setup Workflow}
+\author{Clay Wood}
+\date{}
 
 \begin{document}
+	
+\maketitle
 
-\centering{{\Large \textbf{Pressure Vessel Setup Workflow -- Draft}}} \\
+\tableofcontents
+
+\section{a section}
+something something something. 
+
+%\centering{{\Large \textbf{Pressure Vessel Setup Workflow -- Draft}}}
+%{\Large \textbf{Pressure Vessel Setup Workflow -- Draft}}
+%\vspace{-0.1 in}
 %\bigskip
 %\hrule
 
@@ -81,6 +90,12 @@
 \end{flushleft}
 
 
+\section{something}
+	something;ldajf ;adf
+	\begin{itemize}
+		\item Increase stresses in this order:  $\sigma_n $  and then $P_c $. \textcolor{red}{Rule of thumb: $\sigma_n -  P_c \approx 1$ MPa.}
+		\item Connect inlet fluid line from intensifier to top of Vessel and then pressurize.\\ 
+	\end{itemize}
 %\clearpage
 
 %\begin{left}
@@ -92,29 +107,29 @@
 %	\includegraphics[width=0.5 \textwidth]{vessel_door_tighten.pdf} \label{fig:bolt_tight} \\
 %	
 %\end{left}
-
+\begin{figure} \includegraphics[scale=1]{vessel_config.eps} \end{figure}
 %\the\dimexpr .5\textwidth\relax
-\begin{figure*}[ht]
+\begin{figure}
 %	\centering
 	\includegraphics[scale=1]{vessel_config.eps}
 	\caption[]{Pressure vessel and pressure intensifiers, $P_pA $, $P_pB $, and $P_c $. The back door has ports to fill from the confining oil reservoir and to pressurize from the $  P_c $ intensifier, and has the availability for connecting to internal acoustics.}
 	\label{fig:vessel_config}
-\end{figure*}
+\end{figure}
 
-\begin{figure*}[ht]
+\begin{figure}
 	\centering
 	\includegraphics[scale=1]{vessel_doors.eps}
 	\caption[]{Vessel door schematic. The back door has ports to fill from the confining oil reservoir and to pressurize from the $  P_c $ intensifier, and has the availability for connecting to internal acoustics.}
 	\label{fig:doors}
-\end{figure*}
+\end{figure}
 
 %\clearpage
 
-\begin{figure*}[ht]
+\begin{figure}
 	\centering
 	\includegraphics[scale=1]{vessel_door_tighten.eps}
 	\caption[]{Suggested order for tightening bolts on vessel doors. Proceed in alphabetical order, opposite pairs, to avoid a circular pattern.}
 	\label{fig:bolt_tight}
-\end{figure*}
+\end{figure}
 
 \end{document}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=latex 2020.4.7)  14 NOV 2020 19:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=latex 2020.4.7)  14 NOV 2020 21:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -7,12 +7,13 @@ de"##1"{\Link##1}\expandafter\HCode\else\expandafter\Link\fi}\def\Link#1.a.b.c.
 {\g@addto@macro\@documentclasshook{\RequirePackage[#1,html]{tex4ht}}\let\HCode\
 documentstyle\def\documentstyle{\let\documentstyle\HCode\expandafter\def\csname
  tex4ht\endcsname{#1,html}\def\HCode####1{\documentstyle[tex4ht,}\@ifnextchar[{
-\HCode}{\documentstyle[tex4ht]}}}\makeatother\HCode .a.b.c.\input  index.tex
+\HCode}{\documentstyle[tex4ht]}}}\makeatother\HCode html, NoFonts.a.b.c.\input 
+ index.tex
  (./index.tex
 (/usr/local/texlive/2020/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
-(/usr/local/texlive/2020/texmf-dist/tex/latex/base/size12.clo
-File: size12.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
 )
 \c@part=\count167
 \c@section=\count168
@@ -272,13 +273,8 @@ Package hyperref Info: Driver: htex4ht.
 File: htex4ht.def 2020/01/14 v7.00d Hyperref driver for TeX4ht
 Package hyperref Info: tex4ht is already loaded.
 )
-(/usr/local/texlive/2020/texmf-dist/tex/latex/natbib/natbib.sty
-Package: natbib 2010/09/13 8.31b (PWD, AO)
-\bibhang=\skip52
-\bibsep=\skip53
-LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count194
-)
+Package hyperref Info: Option `colorlinks' set `true' on input line 15.
+
 (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/tex4ht.4ht
 version 2020-03-12-14:03
 --------------------------------------
@@ -292,11 +288,11 @@ version 2020-03-12-14:03
 version 2020-02-18-14:17
 
 --- needs --- tex4ht index ---
-\tmp:cnt=\count195
+\tmp:cnt=\count194
 \openout15 = `index.tmp'.
 
 (./index.tmp)
-\tmp:dim=\skip54
+\tmp:dim=\skip52
 --------------------------------------
 --- Note --- for XML code, use the command line option `xml' or `xhtml'
 --------------------------------------
@@ -343,10 +339,6 @@ version 2020-03-16-10:43
 
 --------------------------------------
 --------------------------------------
---- Note --- to ignore CSS font decoration, use the `NoFonts' command line opti
-on
---------------------------------------
---------------------------------------
 --- Note --- for jpg bitmaps of pictures, use the `jpg' command line option. (C
 haracter bitmaps are controled only by `g' records of tex4ht.env and `-g' switc
 hes of tex4ht.c) 
@@ -367,7 +359,7 @@ option `frames-fn'
 --------------------------------------
 --- Note --- for file extension name xht, use the command line option `xht'
 --------------------------------------
-TeX4ht package options: html
+TeX4ht package options: html,NoFonts
 --------------------------------------
 --- Note --- To print a timestamp, use the command line option timestamp
 --------------------------------------
@@ -623,7 +615,7 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count196
+\c@section@level=\count195
 ) (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/nameref.4ht
 version 2019-12-23-13:36
 
@@ -634,7 +626,7 @@ version 2020-03-16-10:43
 version 2020-03-06-15:07
 ))
 LaTeX Info: Redefining \autoref on input line 95.
-\Hy@SectionHShift=\skip55
+\Hy@SectionHShift=\skip53
 
 (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html4.4ht
 version 2020-03-16-10:43
@@ -664,13 +656,6 @@ version 2020-03-16-10:43
 (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html4-math.4ht
 version 2020-03-06-15:07
 ))
-(/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/natbib.4ht
-(/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html4.4ht
-version 2020-03-16-10:43
-)
-(/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html4-math.4ht
-version 2020-03-06-15:07
-))
 (/usr/local/texlive/2020/texmf-dist/tex/generic/tex4ht/html4.4ht
 version 2020-03-16-10:43
 )
@@ -680,12 +665,12 @@ version 2020-03-06-15:07
 (/usr/local/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-dvips.def
 File: l3backend-dvips.def 2020-03-12 L3 backend support: dvips
 \l__pdf_internal_box=\box48
-\g__pdf_backend_object_int=\count197
+\g__pdf_backend_object_int=\count196
 \l__pdf_backend_content_box=\box49
 \l__pdf_backend_model_box=\box50
-\g__pdf_backend_annotation_int=\count198
-\g__pdf_backend_link_int=\count199
-\g__pdf_backend_link_sf_int=\count266
+\g__pdf_backend_annotation_int=\count197
+\g__pdf_backend_link_int=\count198
+\g__pdf_backend_link_sf_int=\count199
 )
 (./index.aux)
 \openout1 = `index.aux'.
@@ -726,19 +711,19 @@ LaTeX Info: Redefining \nameref on input line 28.
 --- file index.css ---
 [1
 
-] [2] [3] [4] [5] [6] [7] [8] [9] [10] [11] [12] [13] [14] [15] [16] [17
+] [2] (./index.4ct) [3] [4] [5] [6] [7] [8] [9] [10] [11] [12] [13] [14]
+[15] [16] [17
 
 ]
-l. 99 --- needs --- vessel_config.png ---
-
-[18
+l. 110 --- needs --- ./figs/vessel_config.png ---
+ [18
 
 ] [19
 
 ] [20
 
 ]
-l. 106 --- needs --- vessel_doors.png ---
+l. 114 --- needs --- ./figs/vessel_config.png ---
  [21
 
 ] [22
@@ -746,19 +731,28 @@ l. 106 --- needs --- vessel_doors.png ---
 ] [23
 
 ]
-l. 115 --- needs --- vessel_door_tighten.png ---
+l. 121 --- needs --- ./figs/vessel_doors.png ---
  [24
 
 ] [25
 
-] (./index.aux) ) 
-Here is how much of TeX's memory you used:
- 10186 strings out of 480609
- 138727 string characters out of 5903657
- 538245 words of memory out of 5000000
- 25839 multiletter control sequences out of 15000+600000
- 537873 words of font info for 43 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 43i,5n,54p,817b,646s stack positions out of 5000i,500n,10000p,200000b,80000s
+] [26
 
-Output written on index.dvi (25 pages, 28160 bytes).
+]
+l. 130 --- needs --- ./figs/vessel_door_tighten.png ---
+ [27
+
+] [28
+
+]
+(./index.aux) ) 
+Here is how much of TeX's memory you used:
+ 9900 strings out of 480609
+ 135022 string characters out of 5903657
+ 532606 words of memory out of 5000000
+ 25559 multiletter control sequences out of 15000+600000
+ 538622 words of font info for 46 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 43i,6n,54p,830b,652s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on index.dvi (28 pages, 31200 bytes).
