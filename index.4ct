@@ -1,2 +1,5 @@
 \expandafter\ifx\csname doTocEntry\endcsname\relax \expandafter\endinput\fi 
+\doTocEntry\toclof{1}{\csname a:TocLink\endcsname{1}{x1-21}{}{}}{figure}\relax 
+\doTocEntry\toclof{2}{\csname a:TocLink\endcsname{1}{x1-32}{}{}}{figure}\relax 
+\doTocEntry\toclof{3}{\csname a:TocLink\endcsname{1}{x1-43}{}{}}{figure}\relax 
 \par 

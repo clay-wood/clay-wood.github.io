@@ -1,20 +1,13 @@
 %%tth:\begin{html}<title>Put the title here</title>\end{html}
 
-\documentclass[letterpaper,10pt]{article}
-\usepackage{blindtext}
-\usepackage{authblk}
-\usepackage{tabularx} % extra features for tabular environment
-\usepackage{textcomp}
+%\documentclass[letterpaper,10pt]{article}
+\documentclass[12pt]{article}
 \usepackage{gensymb}
 \usepackage{amsmath}  % improve math presentation
 \usepackage{graphicx} % takes care of graphic including machinery
-\usepackage{subfig}
 \usepackage{wrapfig}
 \usepackage{xcolor}
-\usepackage{rotating}
-\usepackage[margin=1in,letterpaper]{geometry} % decreases margins
 \usepackage{setspace}
-%\usepackage{cite} % takes care of citations
 \usepackage[final]{hyperref} % adds hyper links inside the generated pdf file
 %\hypersetup{
 %	colorlinks=true,       % false: boxed links; true: colored links
@@ -25,7 +18,7 @@
 %}
 %++++++++++++++++++++++++++++++++++++++++
 %\graphicspath{{./figures/}}
-
+\usepackage[round]{natbib}
 
 \newcommand{\caution}{
 	\textbf{\textit{ \textcolor{red}{Use caution.} }}
@@ -34,9 +27,9 @@
 
 \begin{document}
 
-\centering{{\Large \textbf{Pressure Vessel Setup Workflow -- Draft}}} 
-\bigskip
-\hrule
+\centering{{\Large \textbf{Pressure Vessel Setup Workflow -- Draft}}} \\
+%\bigskip
+%\hrule
 
 \bigskip
 \begin{flushleft}
@@ -90,16 +83,27 @@
 
 %\clearpage
 
+%\begin{left}
+%
+%	\includegraphics[scale=0.5]{vessel_config.pdf} \label{fig:vessel_config}\\
+%	
+%	\includegraphics[width=0.5 \textwidth]{vessel_doors.pdf} \label{fig:doors} \\
+%	
+%	\includegraphics[width=0.5 \textwidth]{vessel_door_tighten.pdf} \label{fig:bolt_tight} \\
+%	
+%\end{left}
+
+%\the\dimexpr .5\textwidth\relax
 \begin{figure*}[ht]
-	\centering
-	\includegraphics[width=0.5\textwidth]{vessel_config}
+%	\centering
+	\includegraphics[scale=1]{vessel_config.eps}
 	\caption[]{Pressure vessel and pressure intensifiers, $P_pA $, $P_pB $, and $P_c $. The back door has ports to fill from the confining oil reservoir and to pressurize from the $  P_c $ intensifier, and has the availability for connecting to internal acoustics.}
 	\label{fig:vessel_config}
 \end{figure*}
 
 \begin{figure*}[ht]
 	\centering
-	\includegraphics[width=0.5\textwidth]{vessel_doors}
+	\includegraphics[scale=1]{vessel_doors.eps}
 	\caption[]{Vessel door schematic. The back door has ports to fill from the confining oil reservoir and to pressurize from the $  P_c $ intensifier, and has the availability for connecting to internal acoustics.}
 	\label{fig:doors}
 \end{figure*}
@@ -108,7 +112,7 @@
 
 \begin{figure*}[ht]
 	\centering
-	\includegraphics[width=0.5\textwidth]{vessel_door_tighten}
+	\includegraphics[scale=1]{vessel_door_tighten.eps}
 	\caption[]{Suggested order for tightening bolts on vessel doors. Proceed in alphabetical order, opposite pairs, to avoid a circular pattern.}
 	\label{fig:bolt_tight}
 \end{figure*}
