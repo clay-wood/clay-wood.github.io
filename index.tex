@@ -5,6 +5,8 @@
 \usepackage{wrapfig}
 \usepackage{xcolor}
 \usepackage{setspace}
+\usepackage{color, colortbl}
+\usepackage[framemethod=tikz]{mdframed}
 \usepackage[final]{hyperref} % adds hyper links inside the generated pdf file
 \hypersetup{
 	colorlinks=true,       % false: boxed links; true: colored links
@@ -17,21 +19,92 @@
 %\graphicspath{{./figs/}}
 
 
-%\title{Pressure Vessel Setup Workflow}
-%\author{Clay Wood}
-%\date{}
+\definecolor{LightCyan}{rgb}{0.88,1,1}
+\definecolor{Gray}{gray}{0.9}
+
+\newcommand{\Title}{
+	\textbf{About \hspace{40pt} Research \hspace{40pt} \href{https://clay-wood.github.io/vessel.html target="_blank"}{ Lab Resources}}	
+}
+
+\newcommand{\tableTitle}{
+	\begin{tabular}{ c c c }
+%		\rowcolor{Gray}
+%		& & \\
+		\rowcolor{Gray}
+		Research & Publications & \href{https://clay-wood.github.io/vessel.html target="_blank"}{ Lab Resources} \\
+%		\rowcolor{Gray}
+%		& &
+	\end{tabular}
+}
+
+\title{\Title}
+\author{}
+\date{}
+
+
+
 
 \begin{document}
+
+
+
+
+%\begin{mdframed}[backgroundcolor=brown!10,rightline=false,leftline=false]
+%%	\centering 
+%	\maketitle	
+%\end{mdframed}
+
+\begin{mdframed}[
+	backgroundcolor=black!10,linecolor=white,linewidth=2pt,% 
+	frametitlerule=true,% 
+	%	apptotikzsetting={\tikzset{mdfframetitlebackground/.append style={%
+	%				shade,left color=white, right color=blue!20}}}, 
+	frametitlerulecolor=white,
+	frametitlerulewidth=3.25pt, innertopmargin=\topskip,
+	%	frametitle={Non Mutually Exclusive Events},
+	outerlinewidth=1.25pt
+	]
+	% ----------
+	\maketitle	
 	
-	%\maketitle
+\end{mdframed}
+
+
+\bigskip \bigskip
+
+\begin{mdframed}[
+	backgroundcolor=brown!10,linecolor=white,linewidth=2pt,% 
+	frametitlerule=true,% 
+%	apptotikzsetting={\tikzset{mdfframetitlebackground/.append style={%
+%				shade,left color=white, right color=blue!20}}}, 
+	frametitlerulecolor=white,
+	frametitlerulewidth=3.25pt, innertopmargin=\topskip,
+%	frametitle={Non Mutually Exclusive Events},
+    splitbottomskip=20pt,
+	outerlinewidth=1.25pt
+	]
+	% ----------
+	\begin{center} \subsection*{Clay E Wood} \end{center}
+	\bigskip \bigskip
 	
-	%\tableofcontents
+	\begin{wrapfigure}{r}{0.5\textwidth}
+		\includegraphics[width=0.5\textwidth]{me}
+	\end{wrapfigure}
+	\paragraph{}
+	I am Clay wood, currently in my 4th year as Ph.D. candidate in the Department of Geosciences at Pennsylvania State University. I earned a B.S. in Physics from Emory University and worked as a research assistant in a fluid mechanics laboratory. I am advised by \href{https://personal.ems.psu.edu/~cjm38/}{Dr. Chris Marone} and also co-advised by \href{https://sites.psu.edu/ultrasonics/pshokouhi/}{Dr. Parisa Shokouhi} on work regarding understanding the mechanical and hydraulic properties of fractured rock. I am conducting well-controlled experiments in the Penn State Rock Mechanics laboratory where I modulate triaxial stresses and pore pressure of fractured Westerly granite samples and use active source ultrasonic monitoring as a way to understand how fractured subsurface evolves subject to dynamics stresses from earthquakes, hydraulic fracturing, and wastewater disposal. This research is currently supported by funds from the Department of Energy.\\
+
+	Contact Information:\\  
+	email: \textit{cew52@psu.edu}\\  
+	addr: 312 Deike Building \\  
+	University Park, PA 16802\\
 	
-	\begin{center}
-		\begin{tabular}{ c c c }
-			\textbf{Research} & \textbf{Publications} &  \textbf{\href{https://clay-wood.github.io/vessel.html target="_blank"}{vessel resources}} 
-		\end{tabular}
-	\end{center}
+\end{mdframed}
+
+
+%\begin{mdframed}[backgroundcolor=brown!10,rightline=false,leftline=false]
+%	%	\centering 
+%	\maketitle	
+%\end{mdframed}
 	
 	
 \end{document}
