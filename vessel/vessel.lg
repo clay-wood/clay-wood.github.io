@@ -1,9 +1,12 @@
+htfcss: cmbxti  font-weight: bold; font-style: italic;
+htfcss: cmti  font-style: italic;
 htfcss: cmbx  font-weight: bold;
 htfcss: cmbxsl  font-weight: bold; font-style: oblique;
-htfcss: cmtt font-family: monospace,monospace;
-File: index.html
-File: index.css
-File: index.tmp
+htfcss: cmmi font-style: italic;
+htfcss: cmmib font-style: italic; font-weight: bold;
+File: vessel.html
+File: vessel.css
+File: vessel.tmp
 Css: p{margin-top:0;margin-bottom:0}
 Css: p.indent{text-indent:0;}
 Css: p + p{margin-top:1em;}
@@ -136,7 +139,22 @@ Css:  .wrapfig-r, .wrapfig-ri, .wrapfig-ir, .wrapfig-ro, .wrapfig-or {float:righ
 Css:  .wrapfig-l, .wrapfig-li, .wrapfig-il, .wrapfig-lo, .wrapfig-ol {float:left; text-align:left; margin-right:auto; margin-top:0.5em;} 
 Css: .wrapfig-r .caption td.content, .wrapfig-ri .caption td.content, .wrapfig-ir .caption td.content, .wrapfig-ro .caption td.content, .wrapfig-or .caption td.content, .wrapfig-l .caption td.content, .wrapfig-li .caption td.content, .wrapfig-il .caption td.content, .wrapfig-lo .caption td.content, .wrapfig-ol .caption td.content {white-space: normal; }
 Css: .wrapfig-r .caption, .wrapfig-ri .caption, .wrapfig-ir .caption, .wrapfig-ro .caption, .wrapfig-or .caption, .wrapfig-l .caption, .wrapfig-li .caption, .wrapfig-il .caption, .wrapfig-lo .caption, .wrapfig-ol .caption {width:30%; }
+Css: span#textcolor1{color:#FF0000}
+Css: span#textcolor2{color:#FF0000}
+Css: span#textcolor3{color:#FF0000}
+Css: span#textcolor4{color:#FF0000}
+Css: span#textcolor5{color:#FF0000}
+Css: span#textcolor6{color:#0000FF}
+File: ./figs/vessel_config.png
+File: ./figs/vessel_doors.png
+File: ./figs/vessel_door_tighten.png
 --- characters ---
 Font("cmr","10","10","100")
-Font("cmtt","10","10","100")
+Font("cmmi","7","7","100")
+Font("cmmi","10","10","100")
+Font("cmsy","10","10","100")
+Font("cmr","17","17","100")
+Font("cmr","12","12","100")
 Font("cmbx","10","10","100")
+Font("cmti","10","10","100")
+Font("cmbxti","10","10","100")
