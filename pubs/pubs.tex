@@ -5,6 +5,8 @@
 \usepackage{wrapfig}
 \usepackage{xcolor}
 \usepackage{setspace}
+\usepackage{color, colortbl}
+\usepackage[framemethod=tikz]{mdframed}
 \usepackage[final]{hyperref} % adds hyper links inside the generated pdf file
 \hypersetup{
 	colorlinks=true,       % false: boxed links; true: colored links
@@ -17,16 +19,42 @@
 %\graphicspath{{../figs/}}
 %\usepackage[round]{natbib}
 
+\definecolor{Gray}{gray}{0.9}
+
 \title{Publications \& Conferences}
 \author{}
 \date{}
 
 \begin{document}
 	
-\maketitle
+\begin{mdframed}[
+	backgroundcolor=black!10,linecolor=white,linewidth=2pt,% 
+	frametitlerule=true,% 
+	%	apptotikzsetting={\tikzset{mdfframetitlebackground/.append style={%
+	%				shade,left color=white, right color=blue!20}}}, 
+	frametitlerulecolor=white,
+	frametitlerulewidth=3.25pt, innertopmargin=\topskip,
+	%	frametitle={Non Mutually Exclusive Events},
+	outerlinewidth=1.25pt
+	]
+	% ----------
+	\maketitle	
 
-%\tableofcontents
+\end{mdframed}
+	
+\bigskip \bigskip
 
+\begin{mdframed}[
+	backgroundcolor=gray!10,linecolor=white,linewidth=2pt,% 
+	frametitlerule=true,% 
+	%	apptotikzsetting={\tikzset{mdfframetitlebackground/.append style={%
+	%				shade,left color=white, right color=blue!20}}}, 
+	frametitlerulecolor=white,
+	frametitlerulewidth=3.25pt, innertopmargin=\topskip,
+	%	frametitle={Non Mutually Exclusive Events},
+	splitbottomskip=20pt,
+	outerlinewidth=1.25pt
+	]
 \section*{Publications}
 \href{https://arxiv.org/pdf/1905.11211.pdf}{Tuning contact line dynamics and deposition patterns in volatile liquid mixtures} \\
 AP Mouat, \textcolor{magenta}{CE Wood}, JE Pye, JC Burton\\
@@ -40,8 +68,27 @@ Geophysical Research Letters 47 (1), e2019GL083557\\
 JE Pye, \textcolor{magenta}{CE Wood}, JC Burton\\
 Physical review letters 121 (13), 134501\\
 
+\end{mdframed}
+
+\bigskip \bigskip
+
+\begin{mdframed}[
+	backgroundcolor=gray!10,linecolor=white,linewidth=2pt,% 
+	frametitlerule=true,% 
+	%	apptotikzsetting={\tikzset{mdfframetitlebackground/.append style={%
+	%				shade,left color=white, right color=blue!20}}}, 
+	frametitlerulecolor=white,
+	frametitlerulewidth=3.25pt, innertopmargin=\topskip,
+	%	frametitle={Non Mutually Exclusive Events},
+	splitbottomskip=20pt,
+	outerlinewidth=1.25pt
+	]
 \section*{Conferences}
 
-Under construction...
+Under construction...\\
+
+\end{mdframed}
+
+
 
 \end{document}
