@@ -158,11 +158,12 @@ div.gather-star {text-align:center;}
 
 body {
     /* Serif options */
-    /*font-family: "Times New Roman", Times, serif;*/
+    /*: "Times New Roman", Times, serif;*/
     /*font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif    */
 
     /*Sans Serif options */
     /*font-family: "Helvetica", Arial, Freesans, clean, sans-serif;*/
+    /* font-family: Space Mono; */
     font-family: Arial, Freesans, clean, sans-serif;
     /*font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;*/
     /*font-family: "Trebuchet MS", Helvetica, sans-serif;*/
