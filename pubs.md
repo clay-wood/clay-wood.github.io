@@ -25,23 +25,20 @@ J. Pye, **C. Wood**, J. Burton. (2018) Precursors to Molecular Slip on Smooth Hy
 
 # Conference Talks and Presentations
 
-<!-- \subsection*{Conference Talks \& Presentations}
-\noindent
+**C. Wood**, P. Manogharan, J. Rivière, D. Ellsworth, C. Marone, P. Shokouhi. Relating fracture aperture to hydraulic and elastodynamic properties of dynamically-stressed rock under true-triaxial stress conditions. _Talk_. American Geophysical Union Fall Meeting. Washington D.C., December 2021.
 
-\years{2021} C. Wood}, P. Manogharan, J. Rivière, D. Ellsworth, C. Marone, P. Shokouhi. Relating fracture aperture to hydraulic and elastodynamic properties of dynamically-stressed rock under true-triaxial stress conditions. \emph{Talk}. American Geophysical Union Fall Meeting. Washington D.C., December 2021.\\
+**C. Wood**, P. Manogharan, J. Rivière, D. Ellsworth, C. Marone, P. Shokouhi. Relating fracture aperture to hydraulic and elastodynamic properties of dynamically-stressed rock under true-triaxial stress conditions. [_Poster_](https://github.com/clay-wood/clay-wood.github.io/posters/FractureAperture_poster_ClayEWood.pdf). The Physics of Earthquake Faulting. Rome, IT., September 2021.
 
-\years{2021} C. Wood}, P. Manogharan, J. Rivière, D. Ellsworth, C. Marone, P. Shokouhi. Relating fracture aperture to hydraulic and elastodynamic properties of dynamically-stressed rock under true-triaxial stress conditions. \emph{Poster}. The Physics of Earthquake Faulting. Rome, IT., September 2021.\\
+**C. Wood**, P. Manogharan, S. Zi, J. Rivière, D. Ellsworth, C. Marone, P. Shokouhi. The Relation Between Fracture Aperture and Hydro-mechanical Properties: An Experimental and Analytical Approach. _Poster_. American Geophysical Union Fall Meeting. Washington D.C., December 2020.
 
-\years{2020} C. Wood}, P. Manogharan, S. Zi, J. Rivière, D. Ellsworth, C. Marone, P. Shokouhi. The Relation Between Fracture Aperture and Hydro-mechanical Properties: An Experimental and Analytical Approach. \emph{Poster}. American Geophysical Union Fall Meeting. Washington D.C., December 2020.\\  
+**C. Wood**, P. Manogharan, J. Jin, J. Rivière, D. Ellsworth, C. Marone, P. Shokouhi. The Influence of Fracture Aperture on Permeability and Elastic Nonlinearity: An Integrated Analytical and Empirical Investigation. _Talk_. American Geophysical Union Fall Meeting. Washington D.C., December 2019.  
 
-\years{2019} C. Wood}, P. Manogharan, J. Jin, J. Rivière, D. Ellsworth, C. Marone, P. Shokouhi. The Influence of Fracture Aperture on Permeability and Elastic Nonlinearity: An Integrated Analytical and Empirical Investigation. \emph{Talk}. American Geophysical Union Fall Meeting. Washington D.C., December 2019.\\  
+**C. Wood**, B. Madera, P. Shokouhi, J. Jin, J. Rivière, D. Ellsworth, C. Marone. The Effect of Roughness on the Elasticity and Permeability of Fractured Media. _Poster_. Schatzalp 3rd Induced Seismicity Workshop. Davos, SW., March 2019.  
 
-C. Wood}, B. Madera, P. Shokouhi, J. Jin, J. Rivière, D. Ellsworth, C. Marone. The Effect of Roughness on the Elasticity and Permeability of Fractured Media. \emph{Poster}. Schatzalp 3rd Induced Seismicity Workshop. Davos, SW., March 2019.\\  
+**C. Wood**, B. Madera, P. Shokouhi, J. Jin, J. Rivière, D. Ellsworth, C. Marone. The Effect of Roughness on the Elasticity and Permeability of Fractured Media. _Poster_. American Geophysical Union Fall Meeting. Washington D.C., December 2018.
 
-\years{2018} C. Wood}, B. Madera, P. Shokouhi, J. Jin, J. Rivière, D. Ellsworth, C. Marone. The Effect of Roughness on the Elasticity and Permeability of Fractured Media. \emph{Poster}. American Geophysical Union Fall Meeting. Washington D.C., December 2018.\\  
+**C. Wood**, B. Madera, P. Shokouhi, J. Jin, J. Rivière, D. Ellsworth, C. Marone. The Effect of Roughness on the Elasticity and Permeability of Fractured Media. _Poster_. International School of Physics, Enrico Fermi. Verena, It., December 2018.
 
-C. Wood}, B. Madera, P. Shokouhi, J. Jin, J. Rivière, D. Ellsworth, C. Marone. The Effect of Roughness on the Elasticity and Permeability of Fractured Media. \emph{Poster}. International School of Physics, Enrico Fermi. Verena, It., December 2018.\\  
+**C. Wood**, J. Pye, J. Burton. Liquid “Coffee Rings” and the Spreading of Volatile Liquid Mixtures. _Talk_. American Physical Society March Meeting. New Orleans, LA, March 2017
 
-\years{2017} C. Wood}, J. Pye, J. Burton. Liquid “Coffee Rings” and the Spreading of Volatile Liquid Mixtures. \emph{Talk}. American Physical Society March Meeting. New Orleans, LA, March 2017\\
-
-\years{2016} C. Wood}, J. Pye, J. Burton. Quantifying stick-slip contact line motion of evaporating sessile droplets. \emph{Talk}. American Physical Society March Meeting. Baltimore, MD, March 2016\\ -->
+**C. Wood**, J. Pye, J. Burton. Quantifying stick-slip contact line motion of evaporating sessile droplets. _Talk_. American Physical Society March Meeting. Baltimore, MD, March 2016
