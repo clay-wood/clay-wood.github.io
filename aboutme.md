@@ -1,16 +1,10 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+# subtitle:
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+### Professional Work
+I am a Ph.D. candidate in the Geosciences Department at Pennsylvania State University. My research aims to elucidate the relationship between fractured rock elastic properties and fluid transport using well-controlled experiments in the Penn State Rock and Sediment Mechanics Laboratory. Recently, I have been using numerical modeling, constrained by experimental results.
 
-- I rock a great mustache
-- I'm extremely loyal to my family
-
-What else do you need?
-
-### My story
-
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+### Personal Details
