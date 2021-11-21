@@ -27,7 +27,7 @@ J. Pye, **C. Wood**, J. Burton. (2018) Precursors to Molecular Slip on Smooth Hy
 
 **C. Wood**, P. Manogharan, J. Rivière, D. Ellsworth, C. Marone, P. Shokouhi. Relating fracture aperture to hydraulic and elastodynamic properties of dynamically-stressed rock under true-triaxial stress conditions. _Talk_. American Geophysical Union Fall Meeting. Washington D.C., December 2021.
 
-**C. Wood**, P. Manogharan, J. Rivière, D. Ellsworth, C. Marone, P. Shokouhi. Relating fracture aperture to hydraulic and elastodynamic properties of dynamically-stressed rock under true-triaxial stress conditions. [_Poster_](https://github.com/clay-wood/clay-wood.github.io/blob/f3849b5dc81160507e5eb2cc5c9ab7bf0dfc388b/posters/FractureAperture_poster_ClayEWood.pdf). The Physics of Earthquake Faulting. Rome, IT., September 2021.
+**C. Wood**, P. Manogharan, J. Rivière, D. Ellsworth, C. Marone, P. Shokouhi. Relating fracture aperture to hydraulic and elastodynamic properties of dynamically-stressed rock under true-triaxial stress conditions. [_Poster_](posters/FractureAperture_poster_ClayEWood.pdf). The Physics of Earthquake Faulting. Rome, IT., September 2021.
 
 **C. Wood**, P. Manogharan, S. Zi, J. Rivière, D. Ellsworth, C. Marone, P. Shokouhi. The Relation Between Fracture Aperture and Hydro-mechanical Properties: An Experimental and Analytical Approach. _Poster_. American Geophysical Union Fall Meeting. Washington D.C., December 2020.
 
