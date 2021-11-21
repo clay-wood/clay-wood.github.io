@@ -15,7 +15,12 @@ author: Clay Wood
 
 navbar-links:
   About Me: "aboutme"
+  Research: #"research"
+  Publications: #"pubs"
   CV: "ClayWood_CV.pdf"
+  Resources: #"resources"
+    - Lab: #"resources_lab"
+
 #  Resources:
 #    - Beautiful Jekyll: "https://beautifuljekyll.com"
 #    - Learn markdown: "https://www.markdowntutorial.com/"
