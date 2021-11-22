@@ -19,6 +19,7 @@ navbar-links:
   Publications: "pubs"
   CV: "ClayWood_CV.pdf"
   Resources: #"resources"
+    - General: "resources_helpful"
     - Lab: "resources_lab"
 
 #  Resources:
