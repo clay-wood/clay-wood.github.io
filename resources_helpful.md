@@ -4,13 +4,6 @@ title: Helpful Resources
 # subtitle:
 ---
 
-# TOC
-- [Plotting Practices](#id-section1)
-- [Bash Commands](#id-section2)
-
-<div id='id-section1'/>
-# Tips for scientific plots
-
 ## Colors
 - [Info about color schemes](https://programmingdesignsystems.com/color/color-schemes/index.html#color-schemes-dV9Rf6L) — Programming Design System
 - [RGB Color Codes Chart](https://www.rapidtables.com/web/color/RGB_Color.html) — RapidTables
