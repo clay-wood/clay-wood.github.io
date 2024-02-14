@@ -1,10 +1,14 @@
 ---
 layout: page
 title: Publications & Conferences
+layout: minimal
 # subtitle:
 ---
 
 # Publications
+
+
+**C. Wood**, P. Manogharan, A. Rathbun, J. Rivière, D. Elsworth, C. Marone, P. Shokouhi. (2023) Relating fracture aperture to hydro-mechanical properties of dynamically-stressed tensile-fractured rock (under rev.) JGR: Solid Earth
 
 **C. Wood**, P. Shokouhi, P. Manogharan, J. Rivière, D. Elsworth, C. Marone. (2021) Imaging Elastodynamic and Hydraulic Properties of In Situ Fractured Rock: An Experimental Investigation Exploring Effects of Dynamic Stressing and Shearing. _Journal of Geophysical Research: Solid Earth_, e2020JB021521. [doi](https://doi.org/10.1029/2020JB021521)
 
@@ -24,6 +28,14 @@ J. Pye, **C. Wood**, J. Burton. (2018) Precursors to Molecular Slip on Smooth Hy
 
 
 # Conference Talks and Presentations
+
+**C. Wood**, C. Ke, J. Riviere, D. Elsworth, C. Marone, P. Shokouhi. Decoupling the poromechanics of particle remobilization and interface stiffness of dynamically stressed tensile fractured rock Poster. European Geophysical Union. Vienna, Austria. May 2023.
+
+**C. Wood**, C. Ke, J. Riviere, D. Elsworth, C. Marone, P. Shokouhi. Decoupling the poromechanics of particle remobilization and interface stiffness of dynamically stressed tensile fractured rock Poster. American Geophysical Union Fall Meeting. Chicago, USA. December 2022.
+
+**C. Wood**, C. Ke, J. Riviere, D. Elsworth, C. Marone, P. Shokouhi. Probing the micromechanical features of a fracture interface using a multi-physics approach: A numerical investigation relating asperity de- formation with fluid flow. Poster. Rock Deformation Gordon Research Conference. Maine, USA. August 2022.
+
+C. Wood, C. Ke, J. Riviere, D. Elsworth, C. Marone, P. Shokouhi. Probing the micromechanical features of a fracture interface using a multi-physics approach: A numerical investigation relating asperity de- formation with fluid flow. Talk. European Geophysical Union. Vienna, Austria. May 2022.
 
 **C. Wood**, P. Manogharan, J. Rivière, D. Ellsworth, C. Marone, P. Shokouhi. Relating fracture aperture to hydraulic and elastodynamic properties of dynamically-stressed rock under true-triaxial stress conditions. _Talk_. American Geophysical Union Fall Meeting. Washington D.C., December 2021.
 
