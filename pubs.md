@@ -7,6 +7,7 @@ title: Publications & Conferences
 
 # Publications
 
+R. Affinito, **C. Wood**, S. Marty, D. Elsworth, C. Marone. (2024) The stability transition from stable to unstable frictional slip with finite pore pressure. _Geophysical Research Letters_, e2023GL105568. [doi](https://doi.org/10.1029/2023GL105568)
 
 **C. Wood**, P. Manogharan, A. Rathbun, J. Rivière, D. Elsworth, C. Marone, P. Shokouhi. (2023) Relating fracture aperture to hydro-mechanical properties of dynamically-stressed tensile-fractured rock (under rev.) JGR: Solid Earth
 
