@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Publications & Conferences
-layout: minimal
+#layout: minimal
 # subtitle:
 ---
 
