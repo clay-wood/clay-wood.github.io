@@ -14,13 +14,13 @@ author: Clay Wood
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  About Me: "aboutme"
+  #About Me: "aboutme"
   Research: "research"
   Publications: "pubs"
   CV: "ClayWood_CV.pdf"
   Resources: #"resources"
     - General: "resources_helpful"
-    - Lab: "resources_lab"
+    #- Lab: "resources_lab"
 
 #  Resources:
 #    - Beautiful Jekyll: "https://beautifuljekyll.com"
@@ -46,28 +46,26 @@ round-avatar: true
 # Select the social network links that you want to show in the footer.
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
-  email: "cew52@psu.edu"
+  email: "clayewood@gmail.com"
 #  rss: true  # remove this line if you don't want to show an RSS link at the bottom
-#  facebook: deanattali
+#  facebook: 
   github: "clay-wood"
-#  twitter: daattali
-#  patreon: DeanAttali
-#  youtube: c/daattali
+#  twitter:
+#  patreon:
+#  youtube:
 #  medium: yourname
 #  reddit: yourname
-#  linkedin: daattali
-#  xing: yourname
-#  stackoverflow: "3943160/daattali"
-#  snapchat: deanat78
-#  instagram: deanat78
-#  spotify: yourname
-#  telephone: +14159998888
-#  steam: deanat78
-#  twitch: yourname
+#  linkedin:
+#  xing:
+#  stackoverflow:
+#  snapchat:
+#  instagram: 
+#  spotify: 
+#  telephone: 
 #  yelp: yourname
 #  telegram: yourname
 #  calendly: yourname
-#  mastodon: instance.url/@username
+#  mastodon: 
   ORCID: "0000-0002-6831-3295"
   google-scholar: "citations?user=IQJiX2kAAAAJ&hl=en"
 
@@ -79,9 +77,9 @@ social-network-links:
 
 # Select which social network share links to show in posts
 share-links-active:
-  twitter: true
-  facebook: true
-  linkedin: true
+  twitter: false
+  facebook: false
+  linkedin: false 
   vk: false
 
 # How to display the link to your website in the footer
