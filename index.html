@@ -3,25 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Research Website</title>
+    <title>Your Name's Research Page</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            color: #000;
-            line-height: 1.6;
             margin: 0;
             padding: 0;
-        }
-        .container {
-            width: 80%;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        a {
-            color: blue;
-            text-decoration: underline;
+            background-color: #fff;
+            color: #000;
         }
         header {
             margin-bottom: 20px;
@@ -29,6 +18,35 @@
         footer {
             margin-top: 30px;
             font-size: 0.9em;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #007BFF;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Dark theme */
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #121212;
+                color: #ffffff;
+            }
+            nav ul li a {
+                color: #BB86FC;
+            }
+            nav ul li a:hover {
+                text-decoration: underline;
+            }
         }
     </style>
 </head>
@@ -47,17 +65,15 @@
                 <li><a href="cv.html">Curriculum Vitae</a></li>
                 <li><a href="pubs.html">Publications</a></li>
                 <li><a href="posters.html">Conference Posters</a></li>
-                <!-- <li><a href="other">Other Work</a></li> -->
+                <!-- <li><a href="outreach">Outreach</a></li> -->
             </ul>
         </nav>
 
-        <section id="google-scholar">
-            <h2>Google Scholar</h2>
-            <!-- <p>Below is a preview of my Google Scholar profile:</p> -->
-            <!-- <iframe src="https://scholar.google.com/citations?user=IQJiX2kAAAAJ&hl=en&authuser=1" width="600" height="400" frameborder="0"></iframe> -->
-            <p><a href="https://scholar.google.com/citations?user=IQJiX2kAAAAJ&hl=en&authuser=1" target="_blank">Google Scholar</a>.</p>
+        <section id="contact info">
+            <h2>Contact Information</h2>
+            <p>Email: <a href="mailto:claywood@utexas.edu">UT email</a></p>
+            <p><a href="https://scholar.google.com/citations?user=IQJiX2kAAAAJ&hl=en&authuser=1" target="_blank">Google Scholar</a></p>
         </section>
-
 
         <footer>
             <p>&copy; 2024 Clay Wood. All rights reserved.</p>
