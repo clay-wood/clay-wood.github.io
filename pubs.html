@@ -10,8 +10,8 @@
             background-color: #f0f0f0;
             color: #000;
             line-height: 1.6;
-            margin: 0;
-            padding: 0;
+            margin: 30px;
+            padding: 20px;
         }
         .container {
             width: 80%;
@@ -20,7 +20,7 @@
             padding: 20px;
         }
         a {
-            color: blue;
+            color: #007BFF;
             text-decoration: underline;
         }
         header {
@@ -35,6 +35,19 @@
             height: 500px;
             border: none;
             margin-top: 10px;
+        }
+        /* Dark theme */
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #121212;
+                color: #ffffff;
+            }
+            nav ul li a {
+                color: #BB86FC;
+            }
+            nav ul li a:hover {
+                text-decoration: underline;
+            }
         }
     </style>
 </head>
