@@ -1,0 +1,1197 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Imaging elastodynamic and hydraulic properties of in-situ fractured rock: An experimental investigation exploring effects of dynamic stressing and shearing</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    /* CSS for citations */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+      margin-bottom: 0em;
+    }
+    .hanging-indent div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }  </style>
+  <link rel="stylesheet" href="style.css" />
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Imaging elastodynamic and hydraulic properties of
+in-situ fractured rock: An experimental investigation exploring effects
+of dynamic stressing and shearing</h1>
+<div class="abstract">
+<div class="abstract-title">Abstract</div>
+<p>We describe laboratory experiments to elucidate the relationship
+between nonlinear elasticity and permeability evolution in fractured
+media subjected to local stress perturbations. This study is part of an
+effort to measure fluid pathways and fracture properties using
+active-source acoustic monitoring during fluid injection and shear of
+rough fractures. Experiments were conducted with L-shaped samples of
+Westerly granite fractured in-situ under tri-axial conditions with
+deionized water subsequently circulated through the resulting fractures.
+After in-situ fracturing, we separately imposed oscillations of the
+applied normal stress and pore pressure with amplitudes ranging from 0.2
+to 1 MPa and frequencies from 0.1 to 40 Hz. In response to normal stress
+and pore pressure oscillations, fractured Westerly granite samples
+exhibit characteristic transient softening, acoustic velocity
+fluctuations, and slow recovery, together with permeability enhancement
+or decay, informing us about the coupled nonlinear elastodynamic and
+poromechanical rock properties. Fracture interface properties (contact
+asperity stiffness, aperture), are then altered in-situ by shearing,
+which generally decreases the measured elastic nonlinearity and
+permeability change for both normal stress and pore pressure
+oscillations.</p>
+</div>
+</header>
+<div class="keypoints">
+<p>Lab experiments simulate field conditions to understand underlying
+physics of the coupled mechanical-hydraulic response of fractured
+rock</p>
+<p>Coupled fluid flow and ultrasonic monitoring of fracture plane reveal
+complex relationships between hydraulic and elastodynamic properties</p>
+<p>Dynamic stressing of in-situ fracture results in transient softening,
+recovery, and permeability enhancement</p>
+</div>
+<h1 id="introduction">Introduction</h1>
+<p>Dynamic stresses associated with energy production and waste water
+sequestration (injection, pumping, and transport of supercritical <span
+class="math inline">\(H_{2}O\)</span>–<span
+class="math inline">\(CO_{2}\)</span> fluids) are a potentially
+important contributor to injection-induced seismicity <span
+class="citation"
+data-cites="Healy68 Raleigh76 Simpson88 Sminchak03 Mcnamara15 Mcgarr15 Walsh15">(Healy
+et al. 1968; Raleigh, Healy, and Bredehoeft 1976; Simpson, Leith, and
+Scholz 1988; Sminchak and Gupta 2003; McNamara et al. 2015; McGarr et
+al. 2015; Walsh and Zoback 2015)</span>. These perturbations can cause
+significant changes in the local stress field and poromechanical
+properties in the subsurface and therefore act as a diagnostic for
+impending fault reactivation and prospective changes in permeability -
+among other utilities. Therefore, it is crucial to understand how fluid
+injection influences the hydromechanical properties of rocks and, in
+particular, associated fractures. Natural and anthropogenic sources of
+dynamic perturbation each impact poromechanical properties through
+similar mechanisms and in similar ways, suggesting uniform controls
+relating nonlinear stiffness to poromechanical properties. We
+characterize these dependencies to define the potential to link
+nonlinear acoustic properties to the evolution of reservoir state and
+behavior.</p>
+<p>Empirical evidence from the field and laboratory show that
+earthquakes and subsequent seismic waves cause transient changes in rock
+stiffness in the proximity of faults. Specifically, field observations
+document a sudden reduction in elastic wave velocity associated with
+co-seismic softening and a post-seismic recovery of rock stiffness that
+is logarithmic in time e.g., <span class="citation"
+data-cites="Brenguier08">(Brenguier et al. 2008)</span>. Similar
+observations have been made in the laboratory <span class="citation"
+data-cites="Elkhoury11">(Elkhoury et al. 2011)</span>. Moreover, lab
+studies using dynamic acousto-elastic testing <span class="citation"
+data-cites="Shokouhi17">(Shokouhi et al. 2017)</span>, show that
+ultrasonic wave velocity decreases during dynamic stressing and then
+recovers with the logarithm of time. These studies show that dynamic
+strains on the order of <span class="math inline">\(10^{-6}\)</span> are
+sufficient to cause the nonlinear elastic effects <span class="citation"
+data-cites="Guyer09 Riviere15">(Guyer and Johnson 2009; Jacques Riviere
+et al. 2015)</span>.</p>
+<p>The nonlinear behavior of rocks is sensitive to both fine-scale
+features and second-order constitutive effects, such as fracture
+apertures (impacting flow pathways, asperity stiffness) and nonlinear
+stiffness (impacted by rate-dependent friction and healing). In order to
+fully understand the ramifications of dynamic stressing in the
+subsurface, we need to elucidate the relationship between the
+elastodynamic and hydro-mechanical properties of fractured rocks.
+Currently, the literature characterizing relationships between
+elastodynamic and poromechanical response and subsequent recovery is
+limited <span class="citation" data-cites="Shokouhi20">(Shokouhi et al.
+2020)</span>. We present results from sophisticated and
+highly-constrained laboratory experiments in which we combine the
+analysis of nonlinear elastodynamic and hydraulic data.</p>
+<p>In this paper we briefly revisit experimental results from <span
+class="citation" data-cites="Shokouhi20">(Shokouhi et al. 2020)</span>,
+but expand the focus with additional measurements of imaging acoustic
+nonlinearity across a fracture using multiple P-polarized lead-zirconate
+(PZT) transmitter-receiver pairs. Also, we relate the average nonlinear
+acoustic response to fracture permeability as an averaged hydraulic
+measurement. Another important parameter that we analyze is how the
+fracture recovers from dynamic stressing. Most importantly, we
+investigate the effect of shearing on elastodynamic and hydraulic
+properties of fractures. This is central to this work in that shearing
+considerably modulates the fracture interface, generating wear material
+(gouge, breccia) and changing contact asperities, respectively in
+qualitative terms, which has the objective of simulating conditions
+found in the subsurface.</p>
+<h1 id="sec:experimnt_setup">Experimental Setup</h1>
+<p>We conducted laboratory experiments in a true triaxial configuration
+using fractured granite samples in-situ while simultaneously measuring
+flow rate and nonlinear elastic properties. Samples of Westerly granite
+were cut into L-shape blocks (69 x 45 x 50 x 26 mm, Figure <a
+href="#fig:samplesetup" data-reference-type="ref"
+data-reference="fig:samplesetup">1</a>) with 3 mm deep notches on the
+top and base to guide the evolution of planar fractures driven by shear
+loading to failure. The L-shape is used for maintaining constant nominal
+contact area during both initial fracture then shear. Our samples were
+saturated with deionized water (submerged in water for 24 hours) and
+then placed between steel loading platens with embedded piezoelectric
+transducers. The PZTs from APC International Ltd. are 6.5 mm in
+diameter, with a center frequency of 500 kHz and are epoxied in blind
+holes 4 mm from the rock sample (Figure <a href="#fig:samplesetup"
+data-reference-type="ref" data-reference="fig:samplesetup">1</a>). The
+loading platens contain internal conduits to provide a line source of
+fluid at either end of the fracture plane. Fluid access at both ends of
+the fracture was via a narrow channel (45 x 1 mm) fitted with sintered
+porous fits (permeability <span class="math inline">\(\approx
+10^{-14}\)</span> <span class="math inline">\(m^2\)</span>) and fed by
+five 1.6-mm diameter holes, as shown in Figure <a
+href="#fig:samplesetup" data-reference-type="ref"
+data-reference="fig:samplesetup">1</a>e. Deionized water was pumped
+through the fracture at constant pressure drop using independent high
+speed servo-controllers for both inlet and outlet pressure (Figure <a
+href="#fig:samplesetup" data-reference-type="ref"
+data-reference="fig:samplesetup">1</a>).</p>
+<p>The experimental apparatus consists of a stiff load frame and two
+hydraulic pistons capable of applying force in either displacement- or
+load-control mode and a pressure vessel with independent control of pore
+and confining pressures. Applied forces are measured using custom-built,
+beryllium-copper strain-gauge load cells mounted on each loading piston.
+The load cells have an amplified output of <span
+class="math inline">\(\pm\)</span>5 V with an accuracy of <span
+class="math inline">\(\pm\)</span>5 N and are calibrated with a
+Morehouse proving-ring. Displacements are measured with direct-current
+displacement transducers (DCDT), with an accuracy of <span
+class="math inline">\(\pm\)</span> 0.1 <span class="math inline">\(\mu
+m\)</span>. Confining pressure was created using a food-grade heat
+transfer oil (XCELTHERM 600, Radco Industries). A linear variable
+differential transformer (LVDT) was attached to the sample inside the
+pressure vessel to accurately (<span class="math inline">\(\pm 0.1\ \mu
+m\)</span>) measure changes in fracture dilation/closure. Pressure
+intensifiers fitted with LVDTs and pressure transducers were used to
+control the confining pressure and the internal upstream and downstream
+fluid pressures.</p>
+<p>Each axis of loading is independently servo-controlled and all
+stresses, strains, fluid pressures and fluid volumes were recorded with
+a <span class="math inline">\(\pm10\)</span> V, 16-channel 24-bit
+analog-to-digital converter at 10 kHz and averaged to sampling rates of
+100 Hz or 1 kHz, see Figure <a href="#fig:data_aq"
+data-reference-type="ref" data-reference="fig:data_aq">2</a> for
+schematic of data acquisition system. Fluid flow across the fracture was
+measured using upstream and downstream pore-pressure intensifiers and
+the permeability was subsequently calculated. Active ultrasonic data
+were recorded using a Vantage<sup>TM</sup> Research Ultrasound
+(Verasonics) system. We use broadband (<span
+class="math inline">\(\sim\)</span>0.02-2 MHz) PZTs (APC International
+Ltd. 6.35 mm diameter compressional crystals), which were successively
+pulsed every 1 ms on the transmitting side and recorded at the receiver
+side with a sampling rate of 25 MHz. The input signal is a half sine
+with a frequency of 500 kHz. Also, external triggers sent at regular
+intervals (of order 1 s) by the Verasonics system were recorded by the
+24-bit analog-to-digital data acquisition system. This provided a means
+for synchronizing the fast-sampled “ultrasonic” and lower sampled
+“poro-mechanical” data. We used these data to measure changes in the
+permeability and elasticity of the fractured rock samples.</p>
+<figure id="fig:samplesetup">
+<span class="image placeholder"
+data-original-image-src="experimental_configuration3"
+data-original-image-title="" width="1\columnwidth"></span>
+<figcaption>(a) The Biaxial deformation apparatus has servo-controlled
+vertical and horizontal pistons and a 10 kHz 24-bit analog to digital
+data recorder. (b) A pressure vessel is inserted into the Biax to create
+true triaxial loading. Pressure intensifiers control the confining
+pressure (<span class="math inline">\(P_C\)</span>) and sample (<span
+class="math inline">\(P_{PA}\)</span> and <span
+class="math inline">\(P_{PB}\)</span> ) fluid pressures. (c) L-shaped
+samples of granite were loaded with platens containing piezoelectric
+transducers (p-polarized). After securing the sample in the loading
+platens it is sealed in a latex jacket to separate confining and pore
+fluids. (d) A photo of the sample after experimentation highlights the
+degree of roughness resulting from the in-situ fracturing. (e)
+Post-mortem photograph showing the rough fracture and fluid flow
+channels.</figcaption>
+</figure>
+<figure id="fig:data_aq">
+<embed src="./paper1_figs/exp_daq_v1.pdf" />
+<figcaption>Schematic of the single direct shear configuration with the
+block diagram showing the main features of the data acquisition system
+for both the poro-mechanical and ultrasonic data. Each axis of loading
+is independently servo-controlled and all stresses, strains, fluid
+pressures and fluid volumes were recorded with <span
+class="math inline">\(\pm\)</span>10 V, 16-channel 24-bit
+analog-to-digital converters at 10 kHz and averaged to sampling rates of
+100 Hz or 1 kHz. An LVDT (shown as red cylinder) was used to measure the
+dilation/compaction of the fracture. Active ultrasonic data were
+recorded using a Vantage TM Research Ultrasound (Verasonics) system.
+Also, the Verasonics system sends external triggers at regular intervals
+(<span class="math inline">\(\approx\)</span> 1s) that are recorded by
+the 24-bit analog-to-digital data acquisition system. This allows
+synchronizing of the ultrasonic data to the poro-mechanical data and
+then their joint analysis.</figcaption>
+</figure>
+<h2 id="experimental-procedure">Experimental Procedure</h2>
+<p>Each experiment commenced with extensive sample preparation in which
+the Westerly granite was cut and notched, sealed in a latex jacket, and
+then placed inside the pressure vessel. The latter was filled with
+confining fluid before a horizontal stress of 20 MPa was applied. We
+chose this confining stress such that our results can be compared with
+previous experimental work <span class="citation"
+data-cites="Candela14 Candela15">(Candela et al. 2014, 2015)</span>.
+Confining fluid pressure was slowly increased to 15 MPa afterwards. We
+then applied pore pressure: inlet (<span class="math inline">\(P_{pA
+}\)</span> = 4 MPa) and outlet (<span
+class="math inline">\(P_{pB}\)</span> = 2 MPa). At this state there was
+no flow because the Westerly granite matrix permeability is very low
+(<span class="math inline">\(&lt; 10^{-20}\ m^2\)</span>) and the
+confining fluid pressure (around the jacketed sample) is greater than
+the pore pressure, preventing the short-circuiting flow of water around
+the sample.</p>
+<p>A shear load was then applied with the vertical piston in
+displacement mode at a constant rate of 10 <span
+class="math inline">\(\mu m/s\)</span> for a total of approximately 4 -
+5 mm. Samples fractured in-situ after reaching a critical stress of
+<span class="math inline">\(\approx\)</span>55 MPa (see inset of Figure
+<a href="#fig:exp_seq" data-reference-type="ref"
+data-reference="fig:exp_seq">3</a>c and Figure S2), after which we
+locked the vertical piston. Fluid flow and acoustic emissions were
+measured during fracture, but here we focus on dynamic stressing which
+was implemented via oscillations of the effective normal stress.</p>
+<p>Oscillations of the applied normal stress were applied with the
+horizontal loading piston at prescribed amplitudes (0.2 to 1 MPa) and
+frequencies (0.1, 1, 10, 40 Hz). Pore pressure oscillations were
+achieved by oscillating <span class="math inline">\(P_{PA}\)</span> at
+amplitudes of 0.2 to 1 MPa and frequencies of 0.1, 1, 10 Hz while
+holding <span class="math inline">\(P_{PB}\)</span> constant. Multiple
+sets of normal stress and pore pressure oscillations of varying
+amplitudes and frequencies were applied to investigate: (1)
+repeatability and direct comparison between the two modulated stresses
+(normal stress and pore pressure) and (2) amplitude and frequency
+dependencies of the measured response. Post-fracture dynamic stressing
+is plotted in Figure <a href="#fig:exp_seq" data-reference-type="ref"
+data-reference="fig:exp_seq">3</a>d and shows the normal stress (red)
+and pore pressure (blue) oscillations. To investigate the effect of
+shearing and resulting changes in fracture properties (heterogeneous
+aperture, flow pathways, contact asperities) and generated wear material
+on elastic nonlinearity and permeability, the sample was sheared in two
+4 mm (held at <span class="math inline">\(\sigma_{NS}\)</span> = 20
+MPa), stages, which are shown for experiment p4975 in Figures S3-S4..
+After each shearing stage the oscillation protocol was applied to the
+sample. Initially, the in-situ fracture was quite rough with fines
+throughout, but the effect of shear reduces and changes this roughness;
+the old contacts were broken and new contacts formed, changing the
+extent to which the two halves of the fracture were mated. Throughout
+shear the size, shape, and amount of wear products, or fines,
+continuously evolves and likely has a complicated effect on fluid flow,
+see Figure S1 for qualitative evidence of wear material generated during
+experiment p4975. These measurements allow investigation of how fracture
+properties are related to the elastodyamic and hydromechanical
+properties.</p>
+<figure id="fig:exp_seq">
+<embed src="./paper1_figs/exp_sequence_v3.pdf" />
+<figcaption>(a) Sketch showing sample dimensions and approximate PZT
+transmitter - receiver ray paths. (b) Fluid flow and pore pressure with
+inlet (<span class="math inline">\(P_{PA}\)</span> = 4 MPa) and outlet
+(<span class="math inline">\(P_{PB}\)</span> = 2 MPa). (c) Shear stress
+on the fracture plane was increased by advancing the long end of the
+L-shaped sample at a constant rate of 10 <span class="math inline">\(\mu
+m/s\)</span> while holding the short end in place. Fracture occurred in
+two stages at <span class="math inline">\(\approx\)</span>55 MPa. (d)
+Sketch showing the oscillation protocol applied to the freshly fractured
+sample. Multiple sets of <span class="math inline">\(P_{P}\)</span> and
+<span class="math inline">\(\sigma_{NS}\)</span> oscillations of varying
+amplitude (up to about <span class="math inline">\(\pm\)</span> 1 MPa)
+and frequency (0.1, 1, 10 and 40 Hz) were applied. Oscillation sets are
+defined by a group of repeating oscillations of the same frequency or
+increasing amplitudes. (e) Fractures were sheared in two stages, each
+followed by the dynamic stressing protocol.</figcaption>
+</figure>
+<h2 id="permeability-measurements">Permeability Measurements</h2>
+<p>We measured flow rates independently at the fracture inlet (<span
+class="math inline">\(Q_A\)</span>) and outlet (<span
+class="math inline">\(Q_B\)</span>) using the outputs of LVDTs on the
+pressure intensifiers, see Figure S3. After verifying the steady state
+flow condition (<span class="math inline">\(Q_{A} - Q_{B}  \leq 5
+\%\)</span>), Darcy’s law was used to calculate permeability <span
+class="math inline">\(k\)</span>:</p>
+<div class="linenomath*">
+<p><span class="math display">\[\label{eq:perm}
+    k = \frac{\mu L}{S} \frac{Q}{\Delta P_P}\]</span></p>
+</div>
+<p>where <span class="math inline">\(Q = \frac{1}{2} (Q_A + Q_B
+)\)</span> is the average flow rate (<span
+class="math inline">\(\frac{m^3}{s}\)</span>), <span
+class="math inline">\(\mu\)</span> is the fluid viscosity (<span
+class="math inline">\(10^{-3} Pa \cdot s\)</span>) at 20 C, <span
+class="math inline">\(L\)</span> is the flow path given by the length of
+the sample (50 mm) and <span class="math inline">\(S\)</span> is the
+cross-sectional area perpendicular to the flow path (45 x 26 <span
+class="math inline">\(mm^2\)</span>). Specifically, <span
+class="math inline">\(k\)</span> is the bulk permeability, that is, the
+permeability of the surrounding rock matrix (on order of <span
+class="math inline">\(10^{-21} m^2\)</span>) and of the fracture.
+Alternative calculations of permeability are valid <span
+class="citation" data-cites="Zhang17 Ishibashi18">(Zhang et al. 2017;
+Ishibashi et al. 2018)</span>, however we are interested in relative
+changes in permeability in response to dynamic stressing, rather than
+the absolute value of fracture permeability.</p>
+<h2 id="ultrasonic-measurements-active-source">Ultrasonic Measurements:
+Active Source</h2>
+<p>Ultrasonic waves transmitted through the fracture were recorded
+continuously in each experiment. Half-cycle sinusoidal pulses with an
+amplitude of 40 V and center frequency of 500 kHz were emitted
+consecutively from each transmitting transducer (9 piezoelectric discs
+arranged in a 3 x 3 matrix embedded within the right-hand loading platen
+in Figure 1c) with a pulse repetition frequency of 100 Hz or 1000 Hz
+during the low and high frequency (<span class="math inline">\(\geq
+10\)</span> Hz) stress oscillations, respectively. The waveforms were
+amplified (<span class="math inline">\(\sim 40\)</span> dB) and recorded
+for all the receiving transducers (12 piezoelectric discs arranged in a
+4 x 3 matrix embedded within the left-hand loading platen in Figure 1c).
+In this study we utilized 1 transmitter and 3 receivers. Details of the
+ultrasonic data analysis are shown in in Figure <a href="#fig:xcor_poly"
+data-reference-type="ref" data-reference="fig:xcor_poly">4</a>. Figure
+<a href="#fig:xcor_poly" data-reference-type="ref"
+data-reference="fig:xcor_poly">4</a>a shows an excerpt of a normal
+stress oscillation, red, and the received waveforms (decimated) in the
+same time domain. Two signals highlighted in green and yellow are
+projected down to Fig. <a href="#fig:xcor_poly"
+data-reference-type="ref" data-reference="fig:xcor_poly">4</a>b to
+demonstrate the connection between time shift, velocity, and the
+influence of the stress perturbation. The changes in ultrasonic wave
+velocity are determined by first calculating the time shift by the
+cross-correlation of each received signal with a reference waveform. The
+reference waveform is generated by averaging 50 waveforms at the
+beginning of each experimental run, when there are no stress
+oscillations. The window of cross-correlation is chosen to include the
+p-wave arrival to the end of of one period, as shown in Figure <a
+href="#fig:xcor_poly" data-reference-type="ref"
+data-reference="fig:xcor_poly">4</a>c. Since the calculated time shifts
+are typically on the order of 1 ns, smaller than the sampling rate of 5
+MHz, the estimation of the time shift is improved by fitting the peak of
+the cross-correlation function with a second order polynomial, Figure <a
+href="#fig:xcor_poly" data-reference-type="ref"
+data-reference="fig:xcor_poly">4</a>d. The maximum of the parabola
+(fitted to the two data points adjacent to the cross-correlation
+maximum) corresponds to the modified time shift.</p>
+<figure id="fig:xcor_poly">
+<embed src="./paper1_figs/xcor_fig_v3.pdf" />
+<figcaption>(a) Excerpt from Run 4 of experiment p4966 (see Fig. 3 for
+context in p4975) shows part of a 1 Hz, 1 MPa normal stress oscillation
+(red) and the concurrent raw ultrasonic waveforms (grey). The number of
+waveforms in the waterfall plot has been decimated for clarity. (b) Time
+shift was calculated by cross-correlating the waveforms with a reference
+waveform. (c) An example of a reference, unperturbed, waveform (green)
+and perturbed waveform (dashed yellow) highlights the similarity. (d)
+The maximum linear correlation between the reference and perturbed
+waveforms from cross-correlation is used to determine the time shift.
+The inset shows improvement of time shift calculations with a 2nd order
+polynomial fitting procedure.</figcaption>
+</figure>
+<h1 id="results">Results</h1>
+<p>We combine ultrasonic data, strain measurements, and permeability to
+document the nonlinear elastodynamic response and poromechanical effects
+of dynamic stressing. Here, we draw from an extensive set (<span
+class="math inline">\(&gt;\)</span>10) of experiments, calibrations, and
+tests to focus on data from two distinct experiments with a range of
+stressing amplitudes, frequencies, and shearing.</p>
+<h2 id="sec:results-nonlin_hydr_response">Nonlinear elastodynamic and
+hydraulic responses</h2>
+<p>Linear elasticity does not fully describe the behavior of rocks
+especially if they are fractured, highly stressed or subject to
+large-amplitude dynamic stressing. Even undamaged rocks exhibit a range
+of nonlinearity due to a variety of structural features such as
+microcracks and soft grain boundaries <span class="citation"
+data-cites="Riviere15">(Jacques Riviere et al. 2015)</span>. When
+fractured or damaged, the nonlinearity of the rock is further affected
+by contact acoustic nonlinearity at fracture interfaces. The
+characteristic responses to dynamic stressing (transient softening,
+velocity modulation, and slow recovery) as shown in Figure <a
+href="#fig:delc_delk_calc" data-reference-type="ref"
+data-reference="fig:delc_delk_calc">5</a>, are indicative of nonlinear
+mesoscopic elasticity <span class="citation" data-cites="Guyer09">(Guyer
+and Johnson 2009)</span> and highly informative on rock micro-structure,
+fractures, and inter-grain contacts. Crucially, these are the features
+that also control the hydraulic properties of rock. Therefore, instead
+of analyzing the linear elastic response (wave speed and amplitude), we
+focus on the nonlinear elastic response i.e., the stress-dependency of
+wave speed and amplitude.</p>
+<p>Through our active source ultrasonic monitoring we characterize the
+elastodynamic properties of the fractured Westerly granite by
+quantifying its response to dynamic stressing. Figure <a
+href="#fig:delc_delk_calc" data-reference-type="ref"
+data-reference="fig:delc_delk_calc">5</a> demonstrates typical recorded
+elastodynamic and hydraulic responses to a 1 Hz, 1 MPa normal stress
+oscillation in experiment p4966. We characterize the elastodynamic
+response with three parameters to describe the nonlinearity, <span
+class="math inline">\(\Delta c/c_0\)</span>, <span
+class="math inline">\(dc/c_0\)</span>, and <span
+class="math inline">\(\Delta A/A_0\)</span>. To calculate <span
+class="math inline">\(c_0\)</span> and <span
+class="math inline">\(A_0\)</span>, we choose 1-s time windows that are
+short enough to capture pre- and post-oscillation values but long enough
+to provide averaged values not affected by local fluctuations in the
+data. Wave velocity changes from its initial value <span
+class="math inline">\(c_0\)</span> to a new steady-state value <span
+class="math inline">\(c\)</span> in response to a perturbation and <span
+class="math inline">\(\Delta c\)</span> is calculated as the average
+wave velocity over the oscillation duration excluding two cycles in the
+beginning and the end. We quantify the difference <span
+class="math inline">\(c - c_0\)</span> as <span
+class="math inline">\(\Delta c\)</span>. In the case of Figure 5, the
+velocity decreased from about 4383.5 m/s to about 4832 m/s after the
+normal stress oscillation ended, so <span class="math inline">\(\Delta c
+\approx 1.5\ m/s\)</span>.</p>
+<p>The RMS wave amplitude, <span class="math inline">\(A\)</span>, is
+calculated in the time domain in a window comprising the first arrived
+p-wave, see Figure <a href="#fig:xcor_poly" data-reference-type="ref"
+data-reference="fig:xcor_poly">4</a>c. Dynamic stress oscillations
+result in a sudden decrease in amplitude relative to the initial value
+<span class="math inline">\(A_0\)</span> to a new temporary
+non-equilibrium state. Therefore, both <span
+class="math inline">\(\Delta c/c_0\)</span> and <span
+class="math inline">\(\Delta A/A_0\)</span> represent nonlinear ratios
+that demonstrate the transient effect of dynamic loading on fracture
+stiffness, for a range of stress amplitudes and frequencies. Although
+RMS amplitude can be extracted from our data, that is not the main focus
+of this paper, but some results are reported in the Supporting
+Information in Figures S6-S7. Another nonlinearity parameter that we
+identify is modulation of the wave velocity, <span
+class="math inline">\(dc\)</span>, during oscillations at frequencies
+that are harmonics of the driving frequency. This quantity represents
+the average amplitude of wave velocity modulations during dynamic
+perturbations after the system reaches a non-equilibrium state. Finally,
+after being stressed, the fractured rock exhibits long-term “recovery”
+trending toward the initial <span class="math inline">\(c_0\)</span>
+value, in which the wave velocity or amplitude evolves to a new steady
+state. The wave velocity evolution from post-oscillation to initial
+<span class="math inline">\(c_0\)</span> is well described by a
+logarithmic function of the form <span class="math inline">\(c_r = \dot
+c\ \log{t} + b_1\)</span>, where <span class="math inline">\(\dot
+c\)</span> is the slope (recovery rate) and <span
+class="math inline">\(b_1\)</span> is the intercept.</p>
+<p>The stress-induced changes in permeability are captured by two
+parameters: (1) The transient change in permeability <span
+class="math inline">\(\Delta k/k_0\)</span> defined as the %-change due
+to the imposed normal stress or pore pressure oscillations, normalized
+by the pre-oscillation permeability <span
+class="math inline">\(k_0\)</span> as illustrated in Figure <a
+href="#fig:delc_delk_calc" data-reference-type="ref"
+data-reference="fig:delc_delk_calc">5</a>c <span class="citation"
+data-cites="Candela14">(Candela et al. 2014)</span> and (2) the linear
+in log time rate of permeability recovery after the transient increase
+<span class="math inline">\(\dot k\)</span> where <span
+class="math inline">\(k_r = \dot k\ \log{t} + b_2\)</span>, where <span
+class="math inline">\(\dot k\)</span> is the slope (recovery rate) and
+<span class="math inline">\(b_2\)</span> is the intercept. Figure <a
+href="#fig:delc_delk_calc" data-reference-type="ref"
+data-reference="fig:delc_delk_calc">5</a> shows the pre-oscillation
+permeability <span class="math inline">\(k_0\)</span> and the
+post-oscillation permeability <span class="math inline">\(k = k_0 +
+\Delta k\)</span> calculated by averaging the measured values over 10-
+and 1-s time windows. Calculation discontinuities in permeability
+measurements shown in Supplemental Figure S3 correspond to times for
+which inlet/outlet flow rate difference exceeds the 5% threshold that we
+impose to ensure steady state flow. Permeability during dynamic
+stressing is indeterminate because there is no steady-state flow and the
+diffusion time across the fracture is slower than the higher oscillation
+frequencies (10 and 40 Hz).</p>
+<p>To better illustrate how the elastodynamic and hydraulic properties
+of fractured rock change in response to dynamic perturbation we show an
+excerpt from the post-fracture stage of experiment p4975 in Figure <a
+href="#fig:NS_p4975_run3b_01Hz" data-reference-type="ref"
+data-reference="fig:NS_p4975_run3b_01Hz">6</a>. Figure <a
+href="#fig:NS_p4975_run3b_01Hz" data-reference-type="ref"
+data-reference="fig:NS_p4975_run3b_01Hz">6</a> demonstrates how the
+inlet and outlet flow rates evolve during a 0.1 Hz normal stress
+oscillation; three colorbars highlight zoomed cycles in Figure S6. Note
+the clear evidence of compression and tension in the fracture normal
+displacement with increased and decreased normal stress (Figure 6). The
+inlet <span class="math inline">\(Q_A\)</span> flow rate is in phase
+with the imposed stressing, but the outlet flow <span
+class="math inline">\(Q_B\)</span> is 180 out of phase and of a much
+smaller magnitude than that of the inlet. These observations demonstrate
+the magnitude of changes we are characterizing and also reinforce that
+the fracture is continuously evolving during the dynamic perturbations;
+contacts undergo compression and tension resulting in changing fluid
+flow paths along the fracture. In subsequent subsections we discuss how
+nonlinear elastodynamic and hydraulic parameters <span
+class="math inline">\(\Delta c/c_0\)</span>, <span
+class="math inline">\(\Delta k/k_0\)</span>, <span
+class="math inline">\(dc/c_0\)</span>, and <span
+class="math inline">\(\Delta A/A_0\)</span> vary with normal stress and
+pore pressure oscillation amplitudes and frequencies. We also discuss
+how these results are affected by shearing for both experiments p4966
+and p4975.</p>
+<figure id="fig:delc_delk_calc">
+<embed src="./paper1_figs/NsVelRmsPerm_edit.pdf" />
+<figcaption>Details of elastodynamic and hydraulic response to dynamic
+stress oscillation, see Run 4 of p4975 in Fig. 3. Wave velocity and
+permeability changes are calculated using the measured values before and
+after oscillations averaged over the time windows indicated by yellow
+boxes. Permeability measurements are shown only for steady state flow
+when the inlet/outlet flow rates differ by <span
+class="math inline">\(&lt; 5 \%\)</span>. We measure the log-time
+evolution in p-wave velocity (<span class="math inline">\(\dot
+c\)</span>) and permeability (<span class="math inline">\(\dot
+k\)</span>). The initial, pre-oscillation values (<span
+class="math inline">\(c_0\)</span>, <span
+class="math inline">\(A_0\)</span>, <span
+class="math inline">\(k_0\)</span>) are averaged in a 1-s window. The
+changes in velocity (blue), RMS amplitude (magenta), and permeability
+(black), <span class="math inline">\(\Delta c\)</span>, <span
+class="math inline">\(\Delta A\)</span>, <span
+class="math inline">\(\Delta k\)</span>, respectively, are the values
+after oscillation relative to the initial values. Furthermore, we
+measure the average change in p-wave velocity during dynamic stressing
+oscillations as <span class="math inline">\(dc\)</span>.</figcaption>
+</figure>
+<figure id="fig:NS_p4975_run3b_01Hz">
+<embed src="./paper1_figs/NS_p4975_run3.pdf" />
+<figcaption>Elastodynamic and hydraulic data for one set of applied
+normal stress oscillations at a frequency of 0.1 Hz and amplitude of 1
+MPa (See Fig. 3). Fracture closes initially as normal stress increases
+(orange trace) and then varies in phase with fracture normal stress.
+Fluid flow data from the fracture inlet (PpA) and outlet (PpB) document
+the transient response to changes in fracture flow pathways and stress
+state. Note that inflow is phase lagged relative to fracture
+dilation/closure. Elastic wave speed and amplitude are shown for the
+direct path pair (center transmitter to blue receiver in Figure 2).
+Three sections are highlighted showing one full cycle in the beginning,
+middle, and end of the normal stress oscillation. </figcaption>
+</figure>
+<h2
+id="dynamic-stress-induced-changes-in-permeability-and-wave-velocity">Dynamic
+Stress-induced Changes in Permeability and Wave Velocity</h2>
+<p>Changes in fracture closure cause both changes in permeability and
+stiffness. A more complete understanding of both physical phenomena is
+important for understanding processes that control energy production
+from, and waste storage in, the subsurface. In this section, we report
+and compare the stress amplitude and frequency dependencies for both
+sets of parameters. Although these experiments pertain to different
+samples/fractures, both are composed of the same rock type, and the same
+loading conditions were used to produce the shear fractures.</p>
+<p>The dependency of <span class="math inline">\(\Delta k/k_0\)</span>
+on the amplitude of normal stress and pore pressure oscillations is
+shown in Figure <a href="#fig:perm_ns_amp" data-reference-type="ref"
+data-reference="fig:perm_ns_amp">7</a>, which additionally
+differentiates the order in which the 1 Hz oscillations sets were
+imposed. We observe that the relative permeability change <span
+class="math inline">\(\Delta k/k_0\)</span> scales with the amplitude of
+1 Hz normal stress oscillations and, to a greater degree, pore pressure
+oscillations in the post fracture case. Another interesting observation
+here is that the order in which oscillations were applied has an effect
+on the permeability enhancement/reduction. The first pore pressure
+oscillation set generally produces the largest permeability enhancement
+in the post-fracture case, but this is not observed for normal stress
+oscillations, where the second set is the most effective. This is likely
+due to how the pore pressure and normal stress oscillation sets were
+alternated during the experiments, see Figure <a href="#fig:exp_seq"
+data-reference-type="ref" data-reference="fig:exp_seq">3</a>d. The 1 Hz
+normal stress oscillations (increasing amplitude) are separated by
+successive pore pressure oscillation sets, rather than performing all of
+one oscillation type and then the other in each part of the
+experiments.</p>
+<p>After shearing the fractures (5 mm in p4966 and 4 mm in p4975) the
+relationship between permeability enhancement and oscillation amplitude
+deteriorates. The post-shear normal stress oscillations sets cause no
+permeability enhancement with increasing amplitude, but noticeable
+reduction at larger amplitudes (<span
+class="math inline">\(&gt;\)</span>1 MPa). Though there is no clear
+linear trend, pore pressure oscillations are still able to enhance
+permeability in the first post-shear set. Another observation here is
+that permeability enhancement is less influenced by normal stress
+oscillation order compared to the pore pressure oscillations. After the
+second set of shear, both pore pressure and normal stress oscillation
+resulted in permeability reduction for nearly all amplitudes.</p>
+<figure id="fig:perm_ns_amp">
+<embed src="./paper1_figs/delk_amp.pdf" />
+<figcaption>Relative changes in permeability for dynamic stressing via
+applied normal stress (top row) <span
+class="math inline">\(\sigma_{NS}\)</span> and pore pressure (lower row)
+<span class="math inline">\(P_p\)</span> at 1 Hz. Data are shown for the
+period just after the fracture formed (post-fracture) and after each
+increment of shear. Comparing post-fracture results to post-shear we
+observe a general reduction of permeability enhancement via dynamic
+stressing with smaller values of <span class="math inline">\(\Delta
+k/k_0\)</span>. Gouge generated from shear is likely clogging flow
+pathways along the fracture plane. The hypothesized impediment to flow
+for the post-shear oscillation sets causes a reduction in permeability
+enhancement, especially for the post-shear 2 oscillation
+set.</figcaption>
+</figure>
+<p>The relative change in velocity <span class="math inline">\(\Delta
+c/c_0\)</span> for the direct transmitter-receiver pair as a function of
+1 Hz normal stress and pore pressure oscillation amplitudes are plotted
+in Figure <a href="#fig:delc_ns_amp" data-reference-type="ref"
+data-reference="fig:delc_ns_amp">8</a>. As expected <span
+class="citation" data-cites="Riviere15">(Jacques Riviere et al.
+2015)</span>, we observe an increasing velocity drop (more negative
+<span class="math inline">\(\Delta c/c_0\)</span>) with oscillation
+amplitude for both normal stress and pore pressure. In this measure of
+fracture nonlinearity there is a clearer trend between oscillation order
+and magnitude, for this transmitter-receiver path. For both oscillation
+types (normal and pore pressure), subsequent sets of oscillation reduce
+the magnitude of <span class="math inline">\(\Delta c/c_0\)</span>.</p>
+<p>Interestingly, shear displacement scarcely changes the magnitude of
+nonlinearity (<span class="math inline">\(\Delta c/c_0\)</span>) with
+respect to the post-fracture case, especially for normal stress
+oscillations in experiment p4975. Another interesting observation from
+this transmitter-receiver pair is an increase in nonlinearity from
+post-fracture to post-shear 1 in experiment p4966. In the next section,
+we report other transmitter-receiver pairs across the fractures.</p>
+<figure id="fig:delc_ns_amp">
+<embed src="./paper1_figs/delc_amp.pdf" />
+<figcaption> Relative changes in p-wave speed for dynamic stressing via
+applied normal stress (top row) <span
+class="math inline">\(\sigma_{NS}\)</span> and pore pressure (lower row)
+<span class="math inline">\(P_p\)</span>. Data are shown for the direct
+transmitter-receiver pair (see Figure 2). Note that the magnitude of
+<span class="math inline">\(\Delta c\)</span> increases as a function of
+oscillation amplitude. We observe increased nonlinearity (absolute value
+of <span class="math inline">\(\Delta c/c_0\)</span>) in some cases
+after the first shear displacement, but then observe a minor reduction
+for both normal stress and pore pressure oscillations after the second
+shear displacement.</figcaption>
+</figure>
+<h2
+id="spatial-variations-of-the-nonlinear-elastodynamic-response">Spatial
+Variations of the Nonlinear Elastodynamic Response</h2>
+<p>The elastic response (<span class="math inline">\(\Delta
+c/c_0\)</span>) presented in Figure <a href="#fig:delc_ns_amp"
+data-reference-type="ref" data-reference="fig:delc_ns_amp">8</a>
+corresponded to a single pair of transducers. To further our
+understanding of the coupling between elastodynamic and hydraulic
+response to dynamic stressing, we investigate the spatial variations of
+the elastic response along the fracture by analyzing all available
+transmitter-receiver pairs measurement of wave velocity (Figures <a
+href="#fig:delc_plots_ns" data-reference-type="ref"
+data-reference="fig:delc_plots_ns">9</a> – <a href="#fig:delc_plots_pp"
+data-reference-type="ref" data-reference="fig:delc_plots_pp">10</a>).
+Figures <a href="#fig:delc_plots_ns" data-reference-type="ref"
+data-reference="fig:delc_plots_ns">9</a> and <a
+href="#fig:delc_plots_pp" data-reference-type="ref"
+data-reference="fig:delc_plots_pp">10</a> show a coarse view of the
+nonlinear elastodynamic response across the fracture as a function of
+applied oscillation amplitude. Note that data point shape corresponds to
+oscillation frequencies. The direct path sensor (blue PZT in Figures <a
+href="#fig:delc_plots_ns" data-reference-type="ref"
+data-reference="fig:delc_plots_ns">9</a> – <a href="#fig:delc_plots_pp"
+data-reference-type="ref" data-reference="fig:delc_plots_pp">10</a>)
+results were discussed in the previous section. The focus here is to
+describe observations regarding the other transmitter-receiver paths,
+that is the heterogeneity of the fracture interfaces. The other sensors
+measure larger differences in values and also more linearity in the case
+of the bottom sensor in p4975. The second shear displacement reduces
+nonlinearity (direct pair) and modestly increases nonlinearity (top
+sensor path), but does not have an overall coherent trend for both
+experiments and all increments of shear. The response to pore pressure
+oscillations, Figure <a href="#fig:delc_plots_pp"
+data-reference-type="ref" data-reference="fig:delc_plots_pp">10</a>,
+shows more coherent results as compared to applied normal stress. Again,
+large amplitude and high frequency oscillations generally produce the
+largest magnitude of relative change in velocity. This particular
+measurement of nonlinear elasticity is noticeably lower in experiment
+p4975 for the bottom receiver path. Another important observation is
+that shearing has little effect on the magnitude of nonlinearity for
+pore pressure oscillations. There are instances of large differences in
+nonlinearity at a particular amplitude and frequency (10 Hz for
+example), which are a function of oscillation set order. Generally,
+subsequent oscillation sets produce less nonlinearity, though this is
+not always the case.</p>
+<p>Figure <a href="#fig:delc_plots2" data-reference-type="ref"
+data-reference="fig:delc_plots2">11</a> relates permeability changes
+<span class="math inline">\(\Delta k/k_0\)</span>, an hydraulic
+measurement averaged over the fracture plane, to the change in wave
+velocity <span class="math inline">\(\overline{\Delta c/c_0}\)</span>
+averaged across all receiver locations. The data point shapes again
+correspond to the oscillation frequencies and their sizes correspond to
+oscillation amplitude. The main observation for the post-fracture
+oscillation sets is that relative changes in permeability and wave
+velocity are highly connected. That is to say, larger normal stress or
+pore pressure oscillation amplitudes and frequencies produce larger
+transient softening and permeability enhancement for two separate
+experiments (different fractured samples). Overall, shearing weakens
+this relationship, reducing the amount of nonlinearity and permeability
+enhancement for both methods of dynamic stressing. Though, in the case
+of normal stress oscillations, the relationship with amplitude and
+frequency still exists, but the overall slope decreases due to shear
+displacement.</p>
+<figure id="fig:delc_plots_ns">
+<embed src="./paper1_figs/Delc_bypair_all_NS.pdf" />
+<figcaption>Nonlinearity as a function of <span
+class="math inline">\(\sigma_{NS}\)</span> oscillation amplitude for
+each receiver. Transitioning from post-fracture results to post-shear
+results, we observe decreasing nonlinearity. The plot colors correspond
+to PZT receiver locations. These results demonstrate the spatial
+variability in nonlinear elasticity across the fracture plane and
+furthermore shows that the two Westerly granite samples exhibit similar
+magnitude of nonlinearity (<span class="math inline">\(\Delta
+c/c_0\)</span>) with normal stress oscillations. </figcaption>
+</figure>
+<figure id="fig:delc_plots_pp">
+<embed src="./paper1_figs/Delc_bypair_all_PP.pdf" />
+<figcaption>Nonlinearity as a function of pore pressure oscillation
+amplitude for each receiver. Transitioning from post-fracture results to
+post-shear results, we observe decreased nonlinearity. The spatial
+variability shows that the pore pressure oscillations in some of the
+receiver locations throughout the experiments cause larger changes in
+elastic nonlinearity than the normal stress oscillations.</figcaption>
+</figure>
+<figure id="fig:delc_plots2">
+<embed src="./paper1_figs/avgDelcAll_amps.pdf" />
+<figcaption>Nonlinearity as a function of permeability change for <span
+class="math inline">\(\sigma_{NS}\)</span> and <span
+class="math inline">\(P_P\)</span> oscillations averaged over all
+receivers. Data point shapes correspond to the oscillation frequencies
+and their sizes to amplitude. In post-fracture oscillation sets,
+relative changes in permeability and wave velocity are correlated. That
+is to say, larger normal stress or pore pressure oscillation amplitude
+and frequencies produce larger transient softening and permeability
+enhancement. Overall, shear weakens this relationship, reducing the
+amount of nonlinearity and permeability enhancement for both methods of
+dynamic stressing. </figcaption>
+</figure>
+<h2 id="wave-velocity-modulation">Wave Velocity Modulation</h2>
+<p>The direct effect of dynamic stressing is an instantaneous modulation
+in wave velocity at harmonic frequencies of the driving frequency. We
+denote the mean velocity amplitude as <span
+class="math inline">\(dc\)</span> (e.g., Figure 5). The relative change
+in average velocity oscillations <span
+class="math inline">\(dc/c_0\)</span> is a proxy for the nonlinear
+parameter <span class="math inline">\(\beta\)</span>, estimated from the
+second harmonic (e.g., <span class="citation"
+data-cites="Guyer09 Riviere13 Riviere15">(Guyer and Johnson 2009; J.
+Riviere et al. 2013; Jacques Riviere et al. 2015)</span>). We observe a
+monotonic relationship between the magnitude of <span
+class="math inline">\(dc/c_0\)</span> and oscillation amplitude for both
+rock samples (Figure <a href="#fig:dc_plots2" data-reference-type="ref"
+data-reference="fig:dc_plots2">12</a>).</p>
+<p>There is a consistent trend that subsequent oscillation sets decrease
+the magnitude of nonlinearity of <span
+class="math inline">\(dc/c_0\)</span> for normal stress modulation. Pore
+pressure oscillations exhibit little to no change through subsequent
+repetitions, except for larger driving amplitudes. Shearing the fracture
+generally decreases the measured nonlinearity, especially for experiment
+p4966 (Figure <a href="#fig:dc_plots2" data-reference-type="ref"
+data-reference="fig:dc_plots2">12</a>). The trend is not as strong for
+p4975, where little to no change in <span
+class="math inline">\(dc/c_0\)</span> nonlinearity is observed after the
+first shear increment. Then, after the second shear, pore pressure
+oscillations interestingly increase the nonlinearity.</p>
+<figure id="fig:dc_plots2">
+<embed src="./paper1_figs/dc_amp.pdf" />
+<figcaption>Velocity amplitude modulation averaged over all receivers
+(<span class="math inline">\(dc/c_0\)</span>) as a function of normal
+stress and Pore pressure oscillations. There is a systematic reduction
+in <span class="math inline">\(dc/c_0\)</span> with accumulated shear
+for normal stress oscillations and there is very little variation in the
+oscillation order. The results from pore pressure oscillations in p4966
+tell a similar story as the normal stress oscillations, but the pore
+pressure oscillations in p4975 show no change from post-fracture to
+post-shear 1 and an increase in <span
+class="math inline">\(dc/c_0\)</span> from post-shear 1 to
+2.</figcaption>
+</figure>
+<h2
+id="permeability-and-wave-velocity-recovery-from-dynamic-stressing">Permeability
+and Wave Velocity Recovery from Dynamic Stressing</h2>
+<p>The long-term evolution of permeability and wave velocity reveal the
+extent to which the fracture properties (asperities, loose wear
+material) recover from dynamic stresses. We observe that the magnitude
+of the log-time permeability recovery increases with pore pressure
+oscillation amplitude (see insets of Figure <a href="#fig:k_recov"
+data-reference-type="ref" data-reference="fig:k_recov">13</a>). Though
+our observations for post-shear are limited, the measurements suggest a
+decreasing rate of recovery as a result of shearing the fracture, as
+shown in Post - Shear 1 and 2 in Figure <a href="#fig:k_recov"
+data-reference-type="ref" data-reference="fig:k_recov">13</a>. The
+permeability recoveries from normal stress oscillations are minuscule
+and slopes have very low goodness of fit and we do not report the
+data.</p>
+<figure id="fig:k_recov">
+<embed src="./paper1_figs/k_recov_amp_PP.pdf" />
+<figcaption>Permeability recovery <span class="math inline">\(\dot
+k\)</span> as a function of applied stress oscillations for <span
+class="math inline">\(P_P\)</span>. Data point shapes indicate
+oscillation order. Recovery rate <span class="math inline">\(\dot
+k\)</span> linearly decreases with <span
+class="math inline">\(P_P\)</span> oscillation amplitude in p4975 and
+subsequent shearing results in slower <span class="math inline">\(\dot
+k\)</span> for <span class="math inline">\(P_P\)</span> oscillations.
+</figcaption>
+</figure>
+<p>The wave velocity recovery rate <span class="math inline">\(\dot
+c\)</span> for the direct transmitter-receiver pair as a function of 1
+Hz normal stress and pore pressure oscillation amplitudes is plotted in
+Figure <a href="#fig:c_recov" data-reference-type="ref"
+data-reference="fig:c_recov">14</a>. We observe faster recovery with
+oscillation amplitude for both normal stress and pore pressure. In the
+post-fracture phase, there is a noticeable effect of order of <span
+class="math inline">\(\sigma_{NS}\)</span> oscillations on recovery
+rate; later oscillation sets exhibit smaller magnitude of <span
+class="math inline">\(\dot c\)</span>, which suggests detectable damage
+to the fracture properties from the first oscillation set. The
+differences between oscillations sets decreases with shearing the
+fracture in both oscillation types. The effect of shear on fracture
+<span class="math inline">\(\dot c\)</span> is a decrease in the
+magnitude of recovery rate with oscillation amplitude for normal stress
+and pore pressure oscillations. Additionally, the differences between
+oscillation sets is generally reduced for both oscillation types.</p>
+<figure id="fig:c_recov">
+<embed src="./paper1_figs/c_recov_amp.pdf" />
+<figcaption>Wave velocity recovery <span class="math inline">\(\dot
+c\)</span> for direct-path receiver as a function of applied stress
+oscillations for <span class="math inline">\(\sigma_{NS}\)</span> and
+<span class="math inline">\(P_P\)</span>. Data point shapes represent
+oscillation order. The recovery rate <span class="math inline">\(\dot
+c\)</span> modestly increases with both <span
+class="math inline">\(\sigma_{NS}\)</span> and <span
+class="math inline">\(P_P\)</span>. Shearing decreases <span
+class="math inline">\(\dot c\)</span> and flattens after the second
+shear displacement. </figcaption>
+</figure>
+<p>Figure <a href="#fig:avg_recov_plots" data-reference-type="ref"
+data-reference="fig:avg_recov_plots">15</a> relates the wave velocity
+recovery rate <span class="math inline">\(\dot c\)</span> averaged over
+all receiver locations to permeability changes <span
+class="math inline">\(\dot k\)</span>, a hydraulic measurement across
+the fracture. The main observation <span class="math inline">\(\dot
+c\)</span> and <span class="math inline">\(\dot k\)</span> are more
+correlated for pore pressure oscillations in the post-fracture phase,
+though sparse. Also, there does not seem to be obvious scaling of
+frequency with the relation between <span class="math inline">\(\dot
+c\)</span> and <span class="math inline">\(\dot k\)</span>. Overall,
+shearing the fracture decreases both the velocity and permeability
+recovery rates for pore pressure oscillations, especially in experiment
+p4975.</p>
+<figure id="fig:avg_recov_plots">
+<embed src="./paper1_figs/avg_recov_All_ampsPP.pdf" />
+<figcaption>Average wave velocity recovery rate <span
+class="math inline">\(\overline{\dot c}\)</span> as a function of
+permeability recovery rate <span class="math inline">\(\dot k\)</span>
+for <span class="math inline">\(P_P\)</span> oscillations averaged over
+all receivers. Data symbol shapes correspond to the oscillation
+frequencies and their sizes to amplitude. In post-fracture oscillation
+sets, both high frequency and large amplitude oscillations yield faster
+recovery rates for both velocity and permeability. The predominant
+effect of shearing is an increase in <span class="math inline">\(\dot
+k\)</span> for <span class="math inline">\(P_P\)</span>
+oscillations.</figcaption>
+</figure>
+<h1 id="discussion">Discussion</h1>
+<p>Nonlinear elastic behavior of rocks is sensitive to fine-scale
+features, such as fracture aperture (impacting flow pathways, asperity
+stiffness) and nonlinear stiffness (impacted by rate-dependent friction
+and healing). We report the relation between changes in wave velocity
+and permeability in response to dynamic stressing and shearing.
+Furthermore, the heterogeneous measurements along multiple
+transmitter-receiver ray-paths across the fracture help illuminate the
+underlying mechanisms.</p>
+<p>We show shearing the fracture significantly reduces the permeability
+enhancement as a function of amplitude oscillation, especially for
+normal stress oscillations, Figure <a href="#fig:perm_ns_amp"
+data-reference-type="ref" data-reference="fig:perm_ns_amp">7</a>.
+Another observation is that alternating between pore pressure and normal
+stress oscillations and/or subsequent sets of oscillations increases the
+magnitude of permeability enhancement for normal stress oscillations
+(post-fracture), but reduces permeability enhancement from pore pressure
+oscillations, noticeable even in the first post-shear experimental runs.
+This may be influenced by the wear material, gouge, generated at the
+fracture interface during shear clogging and unclogging fluid pathways
+along the fracture. Measurements of nonlinearity (<span
+class="math inline">\(\Delta c/c_0\)</span>) of the fracture interface,
+show that shearing the fracture modestly decreases the nonlinear
+response for both types of oscillations. Again, we find that the order
+of oscillation appears to have an effect on the evolution of the
+fracture interface by reducing the magnitude of nonlinearity (<span
+class="math inline">\(\Delta c/c_0\)</span>) for oscillation amplitudes
+(normal stress and pore pressure). Perhaps, that particular fracture
+properties changed (more asperities in contact, different amount of
+gouge material) after shearing to produce a greater degree of
+nonlinearity; further experiments could allow us to determine the
+mechanism for this change.</p>
+<p>The distinct transmitter-receiver ray paths reveal fractures with
+highly heterogeneous properties as the relation between <span
+class="math inline">\(\Delta c/c_0\)</span> and oscillation amplitude
+varies greatly for both normal stress and pore pressure perturbations,
+Figures <a href="#fig:delc_plots_ns" data-reference-type="ref"
+data-reference="fig:delc_plots_ns">9</a>-<a href="#fig:delc_plots_pp"
+data-reference-type="ref" data-reference="fig:delc_plots_pp">10</a>. The
+observed differences are not completely unexpected given that fractured
+Westerly granite samples (Figures <a href="#fig:samplesetup"
+data-reference-type="ref" data-reference="fig:samplesetup">1</a>c and
+S1) have a heterogeneous aperture and irregularly distributed wear
+products (Figure S1), especially following the application of shear
+displacement. This is perhaps due to the fracture interface not being in
+contact compared to the rest of the fracture. Furthermore, there is much
+more similarity in results for the separate experiments than observed in
+the normal stress oscillations. It is conceivable that shearing widens
+the aperture in some locations, which could be filled with wear/gouge
+material or remain empty, while other parts of the fracture aperture
+could become closed. These possibilities may be partially responsible
+for the complicated behavior we observe.</p>
+<p>To “predict" permeability change from nonlinear acoustic
+characterization of dynamically stressed fractured (and sheared) rock,
+we relate the relative velocity change (<span
+class="math inline">\(\Delta c/c_0\)</span>) to the permeability changes
+<span class="math inline">\(\Delta k/k_0\)</span> and the recovery rates
+of velocity and permeability. Previous experimental work suggest that
+changes in permeability during pore pressure oscillations results from
+unclogging fluid pathways, or conduits containing gouge material <span
+class="citation" data-cites="Candela14 Candela15">(Candela et al. 2014,
+2015)</span>. Other experimental work <span class="citation"
+data-cites="Shokouhi20">(Shokouhi et al. 2020)</span> and current
+results challenge this as the sole mechanism since normal stress
+oscillations consistently produce permeability enhancement
+post-fracture. This can be seen in Figure <a href="#fig:delc_plots2"
+data-reference-type="ref" data-reference="fig:delc_plots2">11</a>, where
+the average magnitude of nonlinearity (<span
+class="math inline">\(\Delta c/c_0\)</span>) increases with permeability
+enhancement for both normal stress and pore pressure oscillations.
+However, after shear, the relationship changes such that there is less
+nonlinearity (<span class="math inline">\(\Delta c/c_0\)</span>) and
+less permeability enhancement, especially for normal stress
+oscillations. Subsequent shearing continues this trend of reduced
+nonlinearity and permeability reduction. Overall, these results suggest
+normal stress oscillations, opening and closing mechanism of the
+fracture, is less effective in mobilizing fines to migrate along the
+fracture conduits, pathways, as more gouge is ostensibly created with
+shearing the fracture. Pore pressure oscillations are more effective in
+mobilizing the fines, thus allowing for a more rapid recovery to its
+initial state. Perhaps there is a complex interplay between gouge
+mobilization enhancing the permeability, but also reducing the fracture
+interface contact area, thus decreasing wave velocity as shown in Figure
+S9.</p>
+<p>The direct effect of dynamic stressing is quantified as the mean
+velocity amplitude as <span class="math inline">\(dc\)</span>, a proxy
+for the second harmonic nonlinear parameter. There is a clear monotonic
+relationship between <span class="math inline">\(dc/c_0\)</span> and
+oscillation amplitude (normal stress and pore pressure) for both rock
+samples (Figure <a href="#fig:dc_plots2" data-reference-type="ref"
+data-reference="fig:dc_plots2">12</a>). Shearing decreases this measure
+of nonlinearity for normal stress oscillations, but slightly increases
+for pore pressure oscillations (p4975). We conjecture that the two types
+of dynamic stressing activate two different mechanisms: (1)
+opening/closing of pore throats from normal stress oscillations and (2)
+directly dislodging and mobilizing fines along the fracture from pore
+pressure oscillations.</p>
+<p>In this study, we also measure the log-time recovery of permeability
+and velocity after dynamic stressing. These results show that larger
+pore pressure oscillation amplitudes increases (the absolute value of)
+the rate of recovery. After shearing we observe slower log-time
+evolution of permeability, though our observations are very limited in
+this case. There is perhaps a complex effect from deformation of
+fracture asperities and the granular wear material that inhibit the
+recovery from the transient response to dynamic stressing. We
+hypothesize that the wear material comminuted as a result of subsequent
+shearing and normal stress oscillations, is transported along the
+fracture during the pore pressure oscillations, and impedes a recovery
+from the transient change.</p>
+<h1 id="conclusions">Conclusions</h1>
+<p>We report laboratory experiments to determine the effects of dynamic
+stressing and shearing on elastodynamic and hydraulic properties of
+fractured rock. Monitoring in-situ fractures with active source
+ultrasonic transmission and fluid permeability during dynamic stressing
+driven by both normal stresses and fluid pressures reveals the complex
+relation between elastodynamic and hydraulic properties.</p>
+<p>In response to oscillations of effective normal stress, fractured
+Westerly granite samples exhibit characteristic transient softening,
+acoustic velocity fluctuations, and slow recovery, informing us about
+microstructure and contact mechanics. As found in <span class="citation"
+data-cites="Shokouhi20">(Shokouhi et al. 2020)</span>, large amplitude
+and high frequency oscillations generally increase permeability, with
+pore pressure oscillations producing the largest enhancement of
+permeability. In this study, we add to previous work <span
+class="citation" data-cites="Shokouhi20">(Shokouhi et al. 2020)</span>,
+by analyzing the effect of shearing on the elastodynamic and hydraulic
+properties of fracture rock. Furthermore, we document spatial
+variability in elastodynamic properties across the fractured samples,
+revealing the effect of changes in fracture properties (such as contact
+asperity stiffness, aperture). We find that shearing generally decreases
+the relative velocity change (<span class="math inline">\(\Delta
+c/c_0\)</span>) for both normal stress and pore pressure oscillations.
+The underlying physics remain unclear as to how fracture nonlinearity
+parameters (<span class="math inline">\(\Delta c/c_0 , dc/c_0 , \dot
+c\)</span>) are correlated to hydraulic properties (<span
+class="math inline">\(\Delta k/k_0 , \dot k\)</span>) resulting from
+dynamic stressing and fracture interface change (shearing). However, we
+hypothesize that the fracture dilation and compaction (heterogeneous
+aperture change) dominate during applied normal stress oscillations and
+clogging/unclogging dominates during pore pressure oscillations and
+these phenomena are related to the underlying mechanisms responsible for
+the observed nonlinearity and permeability changes.</p>
+<p>Further experiments are warranted to decouple the effect of gouge
+material evolution and fracture asperities from the log-time recovery of
+permeability and velocity. We will develop methods to collect fine gouge
+material generated from in-situ fracturing and shearing in the
+downstream pore pressure lines in an attempt to quantify the degree to
+which unclogging mechanisms are responsible for the results we observe.
+Another way of investigating the effect of gouge transport is to
+systematically vary the thickness of a synthetic gouge layer of
+pre-fractured granite samples. Future experiments with pre-fractured
+samples will include characterization of surface roughness with
+high-resolution profilometry to better constrain the underlying
+mechanics of aperture and permeability change.</p>
+<p>Experimental and data analysis assistance from Benjamin Madara and
+Jiang Jin, respectfully, was invaluable. Technical assistance from
+Steven Swavely is gratefully acknowledged. This work was fully supported
+by a grant from DOE Office of Basic Energy Science (DE-SC0017585) to PS.
+CM acknowledges support from the European Research Council Advance Grant
+835012 (TECTONIC) and US Department of Energy grants DE-SC0020512 and
+DE-EE0008763. Data in this study is available at
+http://doi.org/10.5281/zenodo.4317749.</p>
+<div id="refs" class="references csl-bib-body hanging-indent"
+data-entry-spacing="0" role="list">
+<div id="ref-Brenguier08" class="csl-entry" role="listitem">
+Brenguier, F., M. Campillo, C. Hadziioannou, N. M. Shapiro, R. M.
+Nadeau, and E. Larose. 2008. <span>“Postseismic Relaxation Along the San
+Andreas Fault at Parkfield from Continuous Seismological
+Observations.”</span> <em>Science</em> 321 (5895): 1478–81. <a
+href="https://doi.org/10.1126/science.1160943">https://doi.org/10.1126/science.1160943</a>.
+</div>
+<div id="ref-Candela14" class="csl-entry" role="listitem">
+Candela, Thibault, Emily E. Brodsky, Chris Marone, and Derek Elsworth.
+2014. <span>“Laboratory Evidence for Particle Mobilization as a
+Mechanism for Permeability Enhancement via Dynamic Stressing.”</span>
+<em>Earth and Planetary Science Letters</em> 392: 279–91.
+https://doi.org/<a
+href="https://doi.org/10.1016/j.epsl.2014.02.025">https://doi.org/10.1016/j.epsl.2014.02.025</a>.
+</div>
+<div id="ref-Candela15" class="csl-entry" role="listitem">
+———. 2015. <span>“Flow Rate Dictates Permeability Enhancement During
+Fluid Pressure Oscillations in Laboratory Experiments.”</span>
+<em>Journal of Geophysical Research: Solid Earth</em> 120 (4): 2037–55.
+https://doi.org/<a
+href="https://doi.org/10.1002/2014JB011511">https://doi.org/10.1002/2014JB011511</a>.
+</div>
+<div id="ref-Elkhoury11" class="csl-entry" role="listitem">
+Elkhoury, Jean E., Andre Niemeijer, Emily E. Brodsky, and Chris Marone.
+2011. <span>“Laboratory Observations of Permeability Enhancement by
+Fluid Pressure Oscillation of in Situ Fractured Rock.”</span>
+<em>Journal of Geophysical Research: Solid Earth</em> 116 (B2).
+https://doi.org/<a
+href="https://doi.org/10.1029/2010JB007759">https://doi.org/10.1029/2010JB007759</a>.
+</div>
+<div id="ref-Guyer09" class="csl-entry" role="listitem">
+Guyer, Robert A, and Paul A Johnson. 2009. <em>Nonlinear Mesoscopic
+Elasticity: The Complex Behaviour of Rocks, Soil, Concrete</em>. John
+Wiley &amp; Sons.
+</div>
+<div id="ref-Healy68" class="csl-entry" role="listitem">
+Healy, J. H., W. W. Rubey, D. T. Griggs, and C. B. Raleigh. 1968.
+<span>“The Denver EarthquakeS.”</span> <em>Science</em> 161 (3848):
+1301–10. <a
+href="https://doi.org/10.1126/science.161.3848.1301">https://doi.org/10.1126/science.161.3848.1301</a>.
+</div>
+<div id="ref-Ishibashi18" class="csl-entry" role="listitem">
+Ishibashi, Takuya, Derek Elsworth, Yi Fang, Jacques Riviere, Benjamin
+Madara, Hiroshi Asanuma, Noriaki Watanabe, and Chris Marone. 2018.
+<span>“Friction-Stability-Permeability Evolution of a Fracture in
+Granite.”</span> <em>Water Resources Research</em> 54 (12): 9901–18.
+https://doi.org/<a
+href="https://doi.org/10.1029/2018WR022598">https://doi.org/10.1029/2018WR022598</a>.
+</div>
+<div id="ref-Mcgarr15" class="csl-entry" role="listitem">
+McGarr, A., B. Bekins, N. Burkardt, J. Dewey, P. Earle, W. Ellsworth, S.
+Ge, et al. 2015. <span>“Coping with Earthquakes Induced by Fluid
+Injection.”</span> <em>Science</em> 347 (6224): 830–31. <a
+href="https://doi.org/10.1126/science.aaa0494">https://doi.org/10.1126/science.aaa0494</a>.
+</div>
+<div id="ref-Mcnamara15" class="csl-entry" role="listitem">
+McNamara, D. E., G. P. Hayes, H. M. Benz, R. A. Williams, N. D. McMahon,
+R. C. Aster, A. Holland, et al. 2015. <span>“Reactivated Faulting Near
+Cushing, Oklahoma: Increased Potential for a Triggered Earthquake in an
+Area of United States Strategic Infrastructure.”</span> <em>Geophysical
+Research Letters</em> 42 (20): 8328–32. https://doi.org/<a
+href="https://doi.org/10.1002/2015GL064669">https://doi.org/10.1002/2015GL064669</a>.
+</div>
+<div id="ref-Raleigh76" class="csl-entry" role="listitem">
+Raleigh, C. B., J. H. Healy, and J. D. Bredehoeft. 1976. <span>“An
+Experiment in Earthquake Control at Rangely, Colorado.”</span>
+<em>Science</em> 191 (4233): 1230–37. <a
+href="https://doi.org/10.1126/science.191.4233.1230">https://doi.org/10.1126/science.191.4233.1230</a>.
+</div>
+<div id="ref-Riviere15" class="csl-entry" role="listitem">
+Riviere, Jacques, Parisa Shokouhi, Robert A. Guyer, and Paul A. Johnson.
+2015. <span>“A Set of Measures for the Systematic Classification of the
+Nonlinear Elastic Behavior of Disparate Rocks.”</span> <em>Journal of
+Geophysical Research: Solid Earth</em> 120 (3): 1587–1604.
+https://doi.org/<a
+href="https://doi.org/10.1002/2014JB011718">https://doi.org/10.1002/2014JB011718</a>.
+</div>
+<div id="ref-Riviere13" class="csl-entry" role="listitem">
+Riviere, J., G. Renaud, R. A. Guyer, and P. A. Johnson. 2013.
+<span>“Pump and Probe Waves in Dynamic Acousto-Elasticity: Comprehensive
+Description and Comparison with Nonlinear Elastic Theories.”</span>
+<em>Journal of Applied Physics</em> 114 (5): 054905. <a
+href="https://doi.org/10.1063/1.4816395">https://doi.org/10.1063/1.4816395</a>.
+</div>
+<div id="ref-Shokouhi20" class="csl-entry" role="listitem">
+Shokouhi, Parisa, Jiang Jin, Clay Wood, Jacques Rivière, Benjamin
+Madara, Derek Elsworth, and Chris Marone. 2020. <span>“Dynamic Stressing
+of Naturally Fractured Rocks: On the Relation Between Transient Changes
+in Permeability and Elastic Wave Velocity.”</span> <em>Geophysical
+Research Letters</em> 47 (1): e2019GL083557. https://doi.org/<a
+href="https://doi.org/10.1029/2019GL083557">https://doi.org/10.1029/2019GL083557</a>.
+</div>
+<div id="ref-Shokouhi17" class="csl-entry" role="listitem">
+Shokouhi, Parisa, Jacques Riviere, Robert A. Guyer, and Paul A. Johnson.
+2017. <span>“Slow Dynamics of Consolidated Granular Systems: Multi-Scale
+Relaxation.”</span> <em>Applied Physics Letters</em> 111 (25): 251604.
+<a
+href="https://doi.org/10.1063/1.5010043">https://doi.org/10.1063/1.5010043</a>.
+</div>
+<div id="ref-Simpson88" class="csl-entry" role="listitem">
+Simpson, D. W., W. S. Leith, and C. H. Scholz. 1988. <span>“Two Types of
+Reservoir-Induced Seismicity.”</span> <em>Bulletin of the Seismological
+Society of America</em> 78 (6): 2025–40.
+</div>
+<div id="ref-Sminchak03" class="csl-entry" role="listitem">
+Sminchak, Joel, and Neeraj Gupta. 2003. <span>“Aspects of Induced
+Seismic Activity and Deep-Well Sequestration of Carbon Dioxide.”</span>
+<em>Environmental Geosciences</em> 10 (2): 81–89. <a
+href="https://doi.org/10.1306/eg.04040302009">https://doi.org/10.1306/eg.04040302009</a>.
+</div>
+<div id="ref-Walsh15" class="csl-entry" role="listitem">
+Walsh, F. Rall, and Mark D. Zoback. 2015. <span>“Oklahoma’s Recent
+Earthquakes and Saltwater Disposal.”</span> <em>Science Advances</em> 1
+(5). <a
+href="https://doi.org/10.1126/sciadv.1500195">https://doi.org/10.1126/sciadv.1500195</a>.
+</div>
+<div id="ref-Zhang17" class="csl-entry" role="listitem">
+Zhang, Fengshou, Yi Fang, Derek Elsworth, Chaoyi Wang, and Xiaofeng
+Yang. 2017. <span>“<span class="nocase">Evolution of Friction and
+Permeability in a Propped Fracture under Shear</span>.”</span> Edited by
+Paolo Fulignati. <em>Geofluids</em> 2017: 2063747. <a
+href="https://doi.org/10.1155/2017/2063747">https://doi.org/10.1155/2017/2063747</a>.
+</div>
+</div>
+</body>
+</html>
