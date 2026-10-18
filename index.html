@@ -1,100 +1,183 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clay Wood's Research Page</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 30px;
-            padding: 20px;
-            line-height: 1.6;
-            background-color: #fff;
-            color: #000;
-        }
-        header {
-            margin-bottom: 20px;
-        }
-        footer {
-            margin-top: 30px;
-            font-size: 0.9em;
-        }
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin-right: 10px;
-        }
-        nav ul li a {
-            text-decoration: none;
-            color: #007BFF;
-        }
-        nav ul li a:hover {
-            text-decoration: underline;
-        }
-        iframe {
-            width: 100%;
-            height: 500px;
-            border: none;
-            margin-top: 10px;
-        }
-        /* Dark theme */
-        @media (prefers-color-scheme: dark) {
-            body {
-                background-color: #121212;
-                color: #ffffff;
-            }
-            nav ul li a {
-                color: #BB86FC;
-            }
-            nav ul li a:hover {
-                text-decoration: underline;
-            }
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Clay Wood — rock physics, geoscience, and computation.">
+  <title>Clay Wood — Rock Physics & Geoscience</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Clay Wood's Research Page</h1>
-            <h2>About me</h2>
-            <p>I am a Postdoctoral Fellow at University of Texas at Austin in Dr. Nicola Tisato's <a href="https://www.jsg.utexas.edu/rdl/">Rock Deformation Laboratory</a> and Dr. D. Nicolas Espinoza's <a href="https://sites.utexas.edu/eagle/" >Energy Geomechanics Laboratory</a>. 
-                The purpose of my research is to investigate the chemo-mechanical processes occurring when CO<sub>2</sub>, water, and ultramafic rocks interact. 
-                A lot of interest revolves around such geological systems because when the CO<sub>2</sub> is injected into volcanic rocks and basalts, it forms carbonates that will sequester the CO<sub>2</sub> in the subsurface with no risk of 
-                leakage [<a href="https://www.sciencedirect.com/science/article/pii/S0009254120301674">1</a>, <a href="https://eos.org/articles/good-news-rocks-crack-under-pressure-from-mineral-co2-storage">2</a>]. 
-                Under certain conditions, the formation of some carbonates can weaken the ultramafic rocks that are often mined to obtain metals and critical minerals. 
-                To understand these chemo-mechanical processes, I have designed and built an pressure vessel with the capability of simulating sub-surface stresses and inecting carbonic acid (CO<sub>2</sub> + H<sub>2</sub>O) rock core plugs of serpentinized dunite from Canada that are targets for Nickel extraction. 
-                While injecting the carbonated water, I concurrently monitor acoustic emissions, indicative of crack formation (mineralization-driven cracks), the changes in elastic properties, and the permeability of the fractured rock. 
+  <div class="site-shell">
+    <header class="site-header" aria-label="Primary navigation">
+      <a class="identity" href="index.html" aria-label="Clay Wood home">
+        <span class="identity__name">Clay Wood, PhD</span>
+        <!-- <span class="identity__role">Researcher in rock physics<br>geoscience &amp; computation</span> -->
+      </a>
 
-                <p>The purpose of these multi-month injection experiments and &microCT scans is to find the conditions where poromechanics and reaction kinetics are favorable to reaction-driven cracking. 
-                    The implication of this process is <i>connected fractures and pores</i> and concomitant <i>enhanced CO<sub>2</sub> storage</i>. This also weakens ultramafic cores that are otherwise uneconomical to mine and may provide opportunities for novel critical mineral leaching methods.</p>
-        </header>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Toggle navigation</span>
+        <span></span><span></span>
+      </button>
 
-        <nav>
-            <ul>
-                <li><a href="research_highlights.html">Research Highlights</a></li>
-                <li><a href="CurriculumVitae_ClayWood.pdf">Curriculum Vitae</a></li>
-                <li><a href="pubs.html">Publications</a></li>
-                <li><a href="posters.html">Conference Posters</a></li>
-                <li><a href="papers.html">Papers</a></li>
-                <!-- <li><a href="outreach">Outreach</a></li> -->
-            </ul>
-        </nav>
+      <nav class="site-nav" id="site-nav">
+        <a href="#about">About</a>
+        <details class="nav-dropdown">
+          <summary>Research</summary>
+          <div class="nav-dropdown__menu">
+            <a href="research_highlights.html">Research Themes</a>
+            <a href="fractured-rock.html">Fractured rock</a>
+            <a href="reactive-transport-co2-storage.html">Reactive transport &amp; CO<sub>2</sub> Storage</a>
+            <a href="delaware-basin.html">Subsurface Deformation &amp; Surface Uplift</a>
+            <a href="contact-line-dynamics.html">Contact-line Dynamics</a>
+          </div>
+        </details>
+        <a href="pubs.html">Publications</a>
+        <a href="posters.html">Conference Presentations</a>
+        <a href="cv.html">CV</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
 
-        <section id="contact info">
-            <h2>Contact Information</h2>
-            <p>Email: <a href="mailto:claywood@utexas.edu">UT email</a></p>
-            <p><a href="https://scholar.google.com/citations?user=IQJiX2kAAAAJ&hl=en&authuser=1" target="_blank">Google Scholar</a></p>
-            <p><a href="https://orcid.org/0000-0002-6831-3295">ORCID</a></p>
-        </section>
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero__copy">
+          <p class="eyebrow">Experimental rock physics</p>
+          <h1 id="hero-title">Quantifying dynamic processes in fractured rock.</h1>
+          <p class="hero__intro">
+            I use laboratory experiments and advanced imaging to simulate subsurface conditions
+            and quantify how fractures evolve under dynamic processes.
+            <!-- I combine experiment, computation, and imaging to understand how
+            Earth materials deform, transmit waves, and transport fluids across
+            fractures and reactive pore networks. -->
+          </p>
+          <!-- <a class="text-link" href="research_highlights.html">Explore research <span aria-hidden="true">→</span></a> -->
+        </div>
 
-        <!-- <footer>
-            <p>&copy; 2024 Clay Wood. All rights reserved.</p>
-        </footer> -->
-    </div>
+        <figure class="hero__figure">
+          <img src="fracture-illustration.png" alt="">
+          <!-- <figcaption>Wavefield scattering through heterogeneous structure.</figcaption> -->
+        </figure>
+      </section>
+
+      <section class="overview-grid" aria-label="Research overview">
+        <article class="overview-column themes" id="about">
+          <header class="section-heading">
+            <p><strong>Research Themes</strong></p>
+          </header>
+
+          <a class="theme-row" href="fractured-rock.html">
+            <span class="theme-icon" aria-hidden="true">
+              <img src="fracture_logo_output/fracture_logo.svg">
+            </span>
+            <span class="theme-copy">
+              <strong>Fractured rock</strong>
+              <small>Elastic, hydraulic, and frictional behavior under dynamic stressing.</small>
+            </span>
+            <span class="row-arrow" aria-hidden="true">→</span>
+          </a>
+
+          <a class="theme-row" href="reactive-transport-co2-storage.html">
+            <span class="theme-icon" aria-hidden="true">
+              <img src="precipitate_logo_output/precipitate_logo.svg">
+            </span>
+            <span class="theme-copy">
+              <strong>Reactive transport & CO<sub>2</sub> Storage</strong>
+              <small>Chemo-mechanical coupling, mineralization, and reaction-driven cracking.</small>
+            </span>
+            <span class="row-arrow" aria-hidden="true">→</span>
+          </a>
+
+          <a class="theme-row" href="delaware-basin.html">
+            <span class="theme-icon" aria-hidden="true">
+              <img src="delaware-basin-deformation.svg" alt="" width="128" height="128">
+            </span>
+            <span class="theme-copy">
+              <strong>Subsurface Deformation &amp; Surface Uplift</strong>
+              <small>Co-evolution of subsurface deformation and surface uplift in the Delaware Basin.</small>
+            </span>
+            <span class="row-arrow" aria-hidden="true">→</span>
+          </a>
+
+          <a class="theme-row" href="contact-line-dynamics.html">
+            <span class="theme-icon" aria-hidden="true">
+              <img src="droplet_fingering_logo_output/droplet_fingering_logo.svg">
+            </span>
+            <span class="theme-copy">
+              <strong>Contact-line Dynamics</strong>
+              <small>Fluid spreading instabilities and deposition of spreading volatile mixtures.</small>
+            </span>
+            <span class="row-arrow" aria-hidden="true">→</span>
+          </a>
+
+          <!-- <a class="section-link" href="research_highlights.html">View research <span aria-hidden="true">→</span></a> -->
+        </article>
+
+        <article class="overview-column publications">
+          <header class="section-heading">
+            <p><strong>Selected Publications</strong></p>
+          </header>
+
+          <ol class="publication-list">
+            <li>
+              <a href="pubs.html">
+                <strong>Relating fracture aperture to hydro-mechanical properties of dynamically stressed tensile-fractured rock</strong>
+                <span>Journal of Geophysical Research: Solid Earth · 2024</span>
+              </a>
+            </li>
+            <li>
+              <a href="pubs.html">
+                <strong>Imaging elastodynamic and hydraulic properties of in-situ fractured rock</strong>
+                <span>Journal of Geophysical Research: Solid Earth · 2021</span>
+              </a>
+            </li>
+            <li>
+              <a href="pubs.html">
+                <strong>Dynamic stressing of naturally fractured rocks</strong>
+                <span>Geophysical Research Letters · 2020</span>
+              </a>
+            </li>
+          </ol>
+
+          <a class="section-link" href="pubs.html">View publications <span aria-hidden="true">→</span></a>
+        </article>
+
+        <!-- <article class="overview-column current-work" id="work">
+          <header class="section-heading">
+            <p>Current work</p>
+          </header>
+
+          <div class="work-list">
+            <a href="research_highlights.html">
+              <strong>Carbon mineralization and reaction-driven cracking</strong>
+              <span>Experiment</span>
+            </a>
+            <a href="papers.html">
+              <strong>Coupled elastodynamic and hydraulic properties of fractures</strong>
+              <span>Methods</span>
+            </a>
+            <a href="posters.html">
+              <strong>Conference posters and visual research summaries</strong>
+              <span>Archive</span>
+            </a>
+          </div>
+
+          <a class="section-link" href="research_highlights.html">View current work <span aria-hidden="true">→</span></a>
+        </article> -->
+      </section>
+    </main>
+
+  </div>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.site-nav');
+
+    toggle?.addEventListener('click', () => {
+      const open = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!open));
+      nav.classList.toggle('is-open', !open);
+    });
+  </script>
 </body>
 </html>
-

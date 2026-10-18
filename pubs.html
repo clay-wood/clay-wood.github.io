@@ -1,90 +1,108 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Publications and Conference</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #ffffff;
-            color: #000;
-            line-height: 1.6;
-            margin: 30px;
-            padding: 20px;
-        }
-        .container {
-            width: 80%;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        a {
-            color: #007BFF;
-            text-decoration: underline;
-        }
-        header {
-            margin-bottom: 20px;
-        }
-        footer {
-            margin-top: 30px;
-            font-size: 0.9em;
-        }
-        iframe {
-            width: 100%;
-            height: 500px;
-            border: none;
-            margin-top: 10px;
-        }
-        /* Dark theme */
-        @media (prefers-color-scheme: dark) {
-            body {
-                background-color: #121212;
-                color: #ffffff;
-            }
-            nav ul li a {
-                color: #BB86FC;
-            }
-            nav ul li a:hover {
-                text-decoration: underline;
-            }
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Selected publications by Clay Wood.">
+  <title>Publications - Clay Wood</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Publications & Conferences</h1>
+  <div class="site-shell">
+    <header class="site-header" aria-label="Primary navigation">
+      <a class="identity" href="index.html" aria-label="Clay Wood home">
+        <span class="identity__name">Clay Wood, PhD</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Toggle navigation</span>
+        <span></span><span></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav">
+        <a href="index.html#about">About</a>
+        <details class="nav-dropdown">
+          <summary>Research</summary>
+          <div class="nav-dropdown__menu">
+            <a href="research_highlights.html">Research Themes</a>
+            <a href="fractured-rock.html">Fractured rock</a>
+            <a href="reactive-transport-co2-storage.html">Reactive transport &amp; CO<sub>2</sub> Storage</a>
+            <a href="delaware-basin.html">Subsurface Deformation &amp; Surface Uplift</a>
+            <a href="contact-line-dynamics.html">Contact-line Dynamics</a>
+          </div>
+        </details>
+        <a href="pubs.html" aria-current="page">Publications</a>
+        <a href="posters.html">Conference Presentations</a>
+        <a href="cv.html">CV</a>
+        <a href="contact.html">Contact</a>
+      </nav>
     </header>
+
     <main>
-        <section id="publications">
-            <h2>Publications</h2>
-            <p>R. Affinito, <strong>C. Wood</strong>, S. Marty, D. Elsworth, C. Marone. (2024) The stability transition from stable to unstable frictional slip with finite pore pressure. <em>Geophysical Research Letters</em>, e2023GL105568. <a href="https://doi.org/10.1029/2023GL105568">doi</a></p>
-            <p><strong>C. Wood</strong>, P. Manogharan, A. Rathbun, J. Rivière, D. Elsworth, C. Marone, P. Shokouhi. (2023) Relating fracture aperture to hydro-mechanical properties of dynamically-stressed tensile-fractured rock (under rev.) JGR: Solid Earth</p>
-            <p><strong>C. Wood</strong>, P. Shokouhi, P. Manogharan, J. Rivière, D. Elsworth, C. Marone. (2021) Imaging Elastodynamic and Hydraulic Properties of In Situ Fractured Rock: An Experimental Investigation Exploring Effects of Dynamic Stressing and Shearing. <em>Journal of Geophysical Research: Solid Earth</em>, e2020JB021521. <a href="https://doi.org/10.1029/2020JB021521">doi</a></p>
-            <p>S. Shreedharan, M. Ikari, <strong>C. Wood</strong>, D. Saffer, L. Wallace, C. Marone. (2021) Frictional and Lithological Controls on Shallow Slow Slip at the Northern Hikurangi Margin. <em>Geochemistry, Geophysics, Geosystems</em>. <a href="https://doi.org/10.1002/essoar.10507803.1">doi</a></p>
-            <p>P. Manogharan, <strong>C. Wood</strong>, C. Marone, D. Elsworth, J. Rivière, P. Shokouhi. (2021) Nonlinear elastodynamic behavior of intact and fractured rock under in-situ stress and saturation conditions. <em>Journal of the Mechanics and Physics of Solids</em>, 153, 104491. <a href="https://doi.org/10.1016/j.jmps.2021.104491">doi</a></p>
-            <p>P. Manogharan, <strong>C. Wood</strong>, C. Marone, D. Elsworth, J. Rivière, P. Shokouhi. (2021) Experimental Investigation of Elastodynamic Nonlinear Response of Dry Intact, Fractured and Saturated Rock. <em>Rock Mech Rock Eng</em>, 125. <a href="https://doi.org/10.1029/2020JB019767">doi</a></p>
-            <p>A. Mouat, <strong>C. Wood</strong>, J. Pye, J. Burton. (2020) Tuning Contact Line Dynamics and Deposition Patterns in Volatile Liquid Mixtures. <em>Phys. Rev. Lett</em>, 124, 064502. <a href="https://doi.org/10.1103/APS.DFD.2018.GFM.P0056">doi</a></p>
-            <p>P. Shokouhi, J. Jin, <strong>C. Wood</strong>, J. Rivière, B. Madara, D. Elsworth, C. Marone. (2020). Dynamic stressing of naturally fractured rocks: On the relation between transient changes in permeability and elastic wave velocity. <em>Geophysical Research Letters</em>, 47, e2019GL083557. <a href="https://doi.org/10.1029/2019GL083557">doi</a></p>
-            <p>A. Mouat, <strong>C. Wood</strong>, J. Pye, J. Burton. (2019) Liquid deposition through evaporation. <em>Phys. Rev. Fluids</em>, 4, 100512. <a href="https://doi.org/10.1103/APS.DFD.2018.GFM.P0056">doi</a></p>
-            <p>J. Pye, <strong>C. Wood</strong>, J. Burton. (2018) Precursors to Molecular Slip on Smooth Hydrophobic Surfaces. <em>Phys. Rev. Lett.</em>, 121, 134501. <a href="https://doi.org/10.1103/PhysRevLett.121.134501">doi</a></p>
-        </section>
-        <section id="conferences">
-            <h2>Conference Talks and Presentations</h2>
-            <p><strong>C. Wood</strong>, C. Ke, J. Riviere, D. Elsworth, C. Marone, P. Shokouhi. Decoupling the poromechanics of particle remobilization and interface stiffness of dynamically stressed tensile fractured rock Poster. European Geophysical Union. Vienna, Austria. May 2023.</p>
-            <p><strong>C. Wood</strong>, C. Ke, J. Riviere, D. Elsworth, C. Marone, P. Shokouhi. Decoupling the poromechanics of particle remobilization and interface stiffness of dynamically stressed tensile fractured rock Poster. American Geophysical Union Fall Meeting. Chicago, USA. December 2022.</p>
-            <p><strong>C. Wood</strong>, C. Ke, J. Riviere, D. Elsworth, C. Marone, P. Shokouhi. Probing the micromechanical features of a fracture interface using a multi-physics approach: A numerical investigation relating asperity deformation with fluid flow. Poster. Rock Deformation Gordon Research Conference. Maine, USA. August 2022.</p>
-            <p>C. Wood, C. Ke, J. Riviere, D. Elsworth, C. Marone, P. Shokouhi. Probing the micromechanical features of a fracture interface using a multi-physics approach: A numerical investigation relating asperity deformation with fluid flow. Talk. European Geophysical Union. Vienna, Austria. May 2022.</p>
-            <p><strong>C. Wood</strong>, P. Manogharan, J. Rivière, D. Ellsworth, C. Marone, P. Shokouhi. Relating fracture aperture to hydraulic and elastodynamic properties of dynamically-stressed rock under true-triaxial stress conditions. <em>Talk</em>. American Geophysical Union Fall Meeting. Washington D.C., December 2021.</p>
-            <p><strong>C. Wood</strong>, P. Manogharan, J. Rivière, D. Ellsworth, C. Marone, P. Shokouhi. Relating fracture aperture to hydraulic and elastodynamic properties of dynamically-stressed rock under true-triaxial stress conditions. <a href="posters/FractureAperture_poster_ClayEWood.pdf"><em>Poster</em></a>. The Physics of Earthquake Faulting. Rome, IT., September 2021.</p>
-            <p><strong>C. Wood</strong>, P. Manogharan, S. Zi, J. Rivière, D. Ellsworth, C. Marone, P. Shokouhi. The Relation Between Fracture Aperture and Hydro-mechanical Properties: An Experimental and Analytical Approach. <em>Poster</em>. American Geophysical Union Fall Meeting. Washington D.C., December 2020.</p>
-            <p><strong>C. Wood</strong>, P. Manogharan, J. Jin, J. Rivière, D. Ellsworth, C. Marone, P. Shokouhi. The Influence of Fracture Aperture on Permeability and Elastic Nonlinearity: An Integrated Analytical and Empirical Investigation. <em>Talk</em>. American Geophysical Union Fall Meeting. Washington D.C., December 2019.</p>
-            <p><strong>C. Wood</strong>, B. Madera, P. Shokouhi, J. Jin, J. Rivière, D. Ellsworth, C. Marone. The Effect of Roughness on the Elasticity and Permeability of Fractured Media. <em>Poster</em>. Schatzalp 3rd Induced Seismicity Workshop. Davos, SW., March 2019.</p>
-            <p><strong>C. Wood</strong>, B. Madera, P. Shokouhi, J. Jin, J. Rivière, D. Ellsworth, C. Marone. The Effect of Roughness on the Elasticity and Permeability of Fractured Media. <em>Poster</em>. American Geophysical Union Fall Meeting. Washington D.C., December 2018.</p>
-            <p><strong>C. Wood</strong>, B. Madera, P. Shokouhi, J. Jin, J. Rivière, D. Ellsworth, C. Marone. The Effect of Roughness on the Elasticity and Permeability of Fractured Media. <em>Poster</em>. International School of Physics, Enrico Fermi. Verena, It., December 2018.</p>
-            <p><strong>C. Wood</strong>, J. Pye, J. Burton. Liquid “Coffee Rings” and the Spreading of Volatile Liquid Mixtures. <em>Talk</em>. American Physical Society March Meeting. New Orleans, LA, March 2017.</p>
-            <p><strong>C. Wood</strong>, J. Pye, J. Burton. Quantifying stick-slip contact line motion of evaporating sessile droplets. <em>Talk</em>. American Physical Society March Meeting. Baltimore, MD, March 2016.</p>
-        </section>
+      <section class="archive-page" aria-labelledby="publications-title">
+        <div class="archive-page__intro">
+          <p class="eyebrow">Publications</p>
+          <h1 id="publications-title">Peer-reviewed Publications</h1>
+          <p class="hero__intro">
+            <!-- Peer-reviewed work spanning fractured rock, elastodynamics, reactive transport, and contact-line dynamics. -->
+          </p>
+        </div>
+
+        <ol class="archive-list">
+          <li>
+            <h2><a class="archive-title-link" href="https://doi.org/10.1029/2023GL105568">The stability transition from stable to unstable frictional slip with finite pore pressure</a></h2>
+            <p class="archive-list__meta">R. Affinito, <strong>C. Wood</strong>, S. Marty, D. Elsworth, C. Marone &middot; 2024 &middot; Geophysical Research Letters</p>
+          </li>
+          <li>
+            <h2><a class="archive-title-link" href="https://scholar.google.com/scholar?q=Relating+fracture+aperture+to+hydro-mechanical+properties+of+dynamically-stressed+tensile-fractured+rock">Relating fracture aperture to hydro-mechanical properties of dynamically-stressed tensile-fractured rock</a></h2>
+            <p class="archive-list__meta"><strong>C. Wood</strong>, P. Manogharan, A. Rathbun, J. Rivi&egrave;re, D. Elsworth, C. Marone, P. Shokouhi &middot; 2023 &middot; JGR: Solid Earth</p>
+          </li>
+          <li>
+            <h2><a class="archive-title-link" href="https://doi.org/10.1029/2020JB021521">Imaging elastodynamic and hydraulic properties of in situ fractured rock: An experimental investigation exploring effects of dynamic stressing and shearing</a></h2>
+            <p class="archive-list__meta"><strong>C. Wood</strong>, P. Shokouhi, P. Manogharan, J. Rivi&egrave;re, D. Elsworth, C. Marone &middot; 2021 &middot; Journal of Geophysical Research: Solid Earth</p>
+          </li>
+          <li>
+            <h2><a class="archive-title-link" href="https://doi.org/10.1002/essoar.10507803.1">Frictional and lithological controls on shallow slow slip at the northern Hikurangi margin</a></h2>
+            <p class="archive-list__meta">S. Shreedharan, M. Ikari, <strong>C. Wood</strong>, D. Saffer, L. Wallace, C. Marone &middot; 2021 &middot; Geochemistry, Geophysics, Geosystems</p>
+          </li>
+          <li>
+            <h2><a class="archive-title-link" href="https://doi.org/10.1016/j.jmps.2021.104491">Nonlinear elastodynamic behavior of intact and fractured rock under in-situ stress and saturation conditions</a></h2>
+            <p class="archive-list__meta">P. Manogharan, <strong>C. Wood</strong>, C. Marone, D. Elsworth, J. Rivi&egrave;re, P. Shokouhi &middot; 2021 &middot; Journal of the Mechanics and Physics of Solids</p>
+          </li>
+          <li>
+            <h2><a class="archive-title-link" href="https://doi.org/10.1029/2020JB019767">Experimental investigation of elastodynamic nonlinear response of dry intact, fractured and saturated rock</a></h2>
+            <p class="archive-list__meta">P. Manogharan, <strong>C. Wood</strong>, C. Marone, D. Elsworth, J. Rivi&egrave;re, P. Shokouhi &middot; 2021 &middot; Rock Mechanics and Rock Engineering</p>
+          </li>
+          <li>
+            <h2><a class="archive-title-link" href="https://doi.org/10.1103/PhysRevLett.124.064502">Tuning contact line dynamics and deposition patterns in volatile liquid mixtures</a></h2>
+            <p class="archive-list__meta">A. Mouat, <strong>C. Wood</strong>, J. Pye, J. Burton &middot; 2020 &middot; Physical Review Letters</p>
+          </li>
+          <li>
+            <h2><a class="archive-title-link" href="https://doi.org/10.1029/2019GL083557">Dynamic stressing of naturally fractured rocks: On the relation between transient changes in permeability and elastic wave velocity</a></h2>
+            <p class="archive-list__meta">P. Shokouhi, J. Jin, <strong>C. Wood</strong>, J. Rivi&egrave;re, B. Madara, D. Elsworth, C. Marone &middot; 2020 &middot; Geophysical Research Letters</p>
+          </li>
+          <li>
+            <h2><a class="archive-title-link" href="https://doi.org/10.1103/APS.DFD.2018.GFM.P0056">Liquid deposition through evaporation</a></h2>
+            <p class="archive-list__meta">A. Mouat, <strong>C. Wood</strong>, J. Pye, J. Burton &middot; 2019 &middot; Physical Review Fluids</p>
+          </li>
+          <li>
+            <h2><a class="archive-title-link" href="https://doi.org/10.1103/PhysRevLett.121.134501">Precursors to molecular slip on smooth hydrophobic surfaces</a></h2>
+            <p class="archive-list__meta">J. Pye, <strong>C. Wood</strong>, J. Burton &middot; 2018 &middot; Physical Review Letters</p>
+          </li>
+        </ol>
+      </section>
     </main>
+  </div>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.site-nav');
+
+    toggle?.addEventListener('click', () => {
+      const open = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!open));
+      nav.classList.toggle('is-open', !open);
+    });
+  </script>
 </body>
 </html>

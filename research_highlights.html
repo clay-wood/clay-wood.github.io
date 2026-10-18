@@ -1,87 +1,113 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conference Posters</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            color: #000;
-            line-height: 1.6;
-            margin: 30px;
-            padding: 20px;
-        }
-        .container {
-            width: 80%;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        a {
-            color: #007BFF;
-            text-decoration: underline;
-        }
-        header {
-            margin-bottom: 20px;
-        }
-        footer {
-            margin-top: 30px;
-            font-size: 0.9em;
-        }
-        iframe {
-            width: 100%;
-            height: 500px;
-            border: none;
-            margin-top: 10px;
-        }
-        /* Dark theme */
-        @media (prefers-color-scheme: dark) {
-            body {
-                background-color: #121212;
-                color: #ffffff;
-            }
-            nav ul li a {
-                color: #BB86FC;
-            }
-            nav ul li a:hover {
-                text-decoration: underline;
-            }
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Research themes for Clay Wood.">
+  <title>Research - Clay Wood</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Research Highlights</h1>
-            <p><a href="index.html">Back to Home</a></p>
-        </header>
+  <div class="site-shell">
+    <header class="site-header" aria-label="Primary navigation">
+      <a class="identity" href="index.html" aria-label="Clay Wood home">
+        <span class="identity__name">Clay Wood, PhD</span>
+      </a>
 
-        <section>
-            <h2>Carbon minearalization and reaction-driven cracking</h2>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Toggle navigation</span>
+        <span></span><span></span>
+      </button>
 
-            <p>The purpose of this research is to investigate the chemo-mechanical processes occurring when CO<sub>2</sub>, water, and ultramafic rocks interact. 
-                A lot of interest revolves around such geological systems because when the CO<sub>2</sub> is injected into volcanic rocks and basalts, it forms carbonates that will sequester the CO<sub>2</sub> in the subsurface with no risk of 
-                leakage [<a href="https://www.sciencedirect.com/science/article/pii/S0009254120301674">1</a>, <a href="https://eos.org/articles/good-news-rocks-crack-under-pressure-from-mineral-co2-storage">2</a>]. 
-                Under certain conditions, the formation of some carbonates can weaken the ultramafic rocks that are often mined to obtain metals and critical minerals. 
-                To understand these chemo-mechanical processes, I have designed and built an pressure vessel with the capability of simulating sub-surface stresses and inecting carbonic acid (CO<sub>2</sub> + H<sub>2</sub>O) rock core plugs of serpentinized dunite from Canada that are targets for Nickel extraction. 
-                While injecting the carbonated water, I concurrently monitor acoustic emissions, indicative of crack formation (mineralization-driven cracks), the changes in elastic properties, and the permeability of the fractured rock. 
+      <nav class="site-nav" id="site-nav">
+        <a href="index.html#about">About</a>
+        <details class="nav-dropdown">
+          <summary>Research</summary>
+          <div class="nav-dropdown__menu">
+            <a href="research_highlights.html" aria-current="page">Research Themes</a>
+            <a href="fractured-rock.html">Fractured rock</a>
+            <a href="reactive-transport-co2-storage.html">Reactive transport &amp; CO<sub>2</sub> Storage</a>
+            <a href="delaware-basin.html">Subsurface Deformation &amp; Surface Uplift</a>
+            <a href="contact-line-dynamics.html">Contact-line Dynamics</a>
+          </div>
+        </details>
+        <a href="pubs.html">Publications</a>
+        <a href="posters.html">Conference Presentations</a>
+        <a href="cv.html">CV</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
 
-                <p>The purpose of these multi-month injection experiments and &microCT scans is to find the conditions where poromechanics and reaction kinetics are favorable to reaction-driven cracking. 
-                    The implication of this process is <i>connected fractures and pores</i> and concomitant <i>enhanced CO<sub>2</sub> storage</i>. This also weakens ultramafic cores that are otherwise uneconomical to mine and may provide opportunities for novel critical mineral leaching methods.</p>
-        </section>
+    <main>
+      <section class="archive-page research-page" aria-labelledby="research-title">
+        <div class="research-page__intro-row">
+          <div class="archive-page__intro">
+            <p class="eyebrow">Research</p>
+            <h1 id="research-title">Research Themes</h1>
+            <p class="hero__intro">
+              Experimental and computational work on fractured rock, reactive systems, subsurface deformation and surface uplift, and interfacial fluid dynamics.
+            </p>
+          </div>
 
-        <section>
-            <h2>Elastodynamic and hydraulic properties of fractured rock</h2>
-            <!-- <p>Here are some of the highlights of my research:</p> -->
-        <section>
+          <figure class="research-hero-image">
+            <img src="fracture-illustration.png" alt="">
+          </figure>
+        </div>
 
-        <section>
-            <h2>Contact line dynamics and deposition patterns in volatile liquid mixtures</h2>
-        </section>
+        <div class="research-theme-list">
+          <a class="research-theme" id="fractured-rock" href="fractured-rock.html">
+            <span class="theme-icon" aria-hidden="true">
+              <img src="fracture_logo_output/fracture_logo.svg" alt="">
+            </span>
+            <div class="research-theme__copy">
+              <h2>Fractured rock</h2>
+              <p>Elastic, hydraulic, and frictional behavior under dynamic stressing.</p>
+            </div>
+          </a>
 
-    </div>
+          <a class="research-theme" id="carbon-mineralization" href="reactive-transport-co2-storage.html">
+            <span class="theme-icon" aria-hidden="true">
+              <img src="precipitate_logo_output/precipitate_logo.svg" alt="">
+            </span>
+            <div class="research-theme__copy">
+              <h2>Reactive transport &amp; CO<sub>2</sub> Storage</h2>
+              <p>Chemo-mechanical coupling, mineralization, and reaction-driven cracking.</p>
+            </div>
+          </a>
+
+          <a class="research-theme" id="delaware-basin" href="delaware-basin.html">
+            <span class="theme-icon" aria-hidden="true">
+              <img src="delaware-basin-deformation.svg" alt="" width="128" height="128">
+            </span>
+            <div class="research-theme__copy">
+              <h2>Subsurface Deformation &amp; Surface Uplift</h2>
+              <p>Co-evolution of subsurface deformation and surface uplift in the Delaware Basin.</p>
+            </div>
+          </a>
+
+          <a class="research-theme" id="contact-line-dynamics" href="contact-line-dynamics.html">
+            <span class="theme-icon" aria-hidden="true">
+              <img src="droplet_fingering_logo_output/droplet_fingering_logo.svg" alt="">
+            </span>
+            <div class="research-theme__copy">
+              <h2>Contact-line Dynamics</h2>
+              <p>Fluid spreading instabilities and deposition of spreading volatile mixtures.</p>
+            </div>
+          </a>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.site-nav');
+
+    toggle?.addEventListener('click', () => {
+      const open = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!open));
+      nav.classList.toggle('is-open', !open);
+    });
+  </script>
 </body>
 </html>
-

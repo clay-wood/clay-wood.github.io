@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Contact Clay Wood for research, publications, and academic profile links.">
+  <title>Contact Information</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header" aria-label="Primary navigation">
+      <a class="identity" href="index.html" aria-label="Clay Wood home">
+        <span class="identity__name">Clay Wood, PhD</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Toggle navigation</span>
+        <span></span><span></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav">
+        <a href="index.html#about">About</a>
+        <details class="nav-dropdown">
+          <summary>Research</summary>
+          <div class="nav-dropdown__menu">
+            <a href="research_highlights.html">Research Themes</a>
+            <a href="fractured-rock.html">Fractured rock</a>
+            <a href="reactive-transport-co2-storage.html">Reactive transport &amp; CO<sub>2</sub> Storage</a>
+            <a href="delaware-basin.html">Subsurface Deformation &amp; Surface Uplift</a>
+            <a href="contact-line-dynamics.html">Contact-line Dynamics</a>
+          </div>
+        </details>
+        <a href="pubs.html">Publications</a>
+        <a href="posters.html">Conference Presentations</a>
+        <a href="cv.html">CV</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="contact-page" aria-labelledby="contact-title">
+        <div>
+          <!-- <p class="eyebrow">Contact</p> -->
+          <h1 id="contact-title">Contact Information</h1>
+          <p class="hero__intro">
+            Feel free to contact me or browse my publications on Google Scholar.
+          </p>
+        </div>
+
+        <address class="contact-list contact-list--page">
+          <a href="mailto:clayewood@gmail.com">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 5.5h17v13h-17zM4 6l8 7 8-7"></path></svg>
+            <span>clayewood@gmail.com</span>
+            <span aria-hidden="true">&rarr;</span>
+          </a>
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=The%20University%20of%20Texas%20at%20Austin">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s6-5.2 6-11a6 6 0 1 0-12 0c0 5.8 6 11 6 11z"></path><circle cx="12" cy="10" r="2"></circle></svg>
+            <span>The University of Texas at Austin</span>
+            <span aria-hidden="true">&rarr;</span>
+          </a>
+          <a href="https://scholar.google.com/citations?user=IQJiX2kAAAAJ&amp;hl=en">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8.5 12 4l8 4.5-8 4.5L4 8.5z"></path><path d="M7 11v4.5c1.3 1.1 3 1.6 5 1.6s3.7-.5 5-1.6V11"></path></svg>
+            <span>Google Scholar</span>
+            <span aria-hidden="true">&rarr;</span>
+          </a>
+          <a href="https://orcid.org/0000-0002-6831-3295">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"></circle><path d="M9 8v8M12 16h2.1c1.8 0 3.1-1.7 3.1-4s-1.3-4-3.1-4H12v8"></path></svg>
+            <span>ORCID</span>
+            <span aria-hidden="true">&rarr;</span>
+          </a>
+          <a href="https://github.com/clay-wood">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M3.5 12h17M12 3c2.5 2.4 3.8 5.4 3.8 9s-1.3 6.6-3.8 9M12 3C9.5 5.4 8.2 8.4 8.2 12s1.3 6.6 3.8 9"></path></svg>
+            <span>github</span>
+            <span aria-hidden="true">&rarr;</span>
+          </a>
+        </address>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.site-nav');
+
+    toggle?.addEventListener('click', () => {
+      const open = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!open));
+      nav.classList.toggle('is-open', !open);
+    });
+  </script>
+</body>
+</html>

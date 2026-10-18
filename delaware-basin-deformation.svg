@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img" aria-labelledby="title description">
+  <title id="title">Subsurface deformation and surface uplift</title>
+  <desc id="description">A conceptual cross-section of curved subsurface layers beneath an uplifted surface, with three upward arrows indicating surface motion. Schematic only; not a measured Delaware Basin profile.</desc>
+  <rect width="128" height="128" fill="#f6f5ef"/>
+  <g stroke="#665f51" stroke-width="2" stroke-linejoin="round">
+    <path d="M5 54 C30 54 37 40 64 40 S98 54 123 54 V123 H5 Z" fill="#a8835d"/>
+    <path d="M5 54 C30 54 37 40 64 40 S98 54 123 54 V103 C97 103 90 90 64 90 S31 103 5 103 Z" fill="#b8b09a"/>
+    <path d="M5 54 C30 54 37 40 64 40 S98 54 123 54 V80 C98 80 89 64 64 64 S30 80 5 80 Z" fill="#d8cdb4"/>
+    <path d="M5 54 C30 54 37 40 64 40 S98 54 123 54 V63 C98 63 91 49 64 49 S30 63 5 63 Z" fill="#82945b"/>
+  </g>
+  <g fill="none" stroke="#587884" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M34 38 V23 M28 29 L34 23 L40 29"/>
+    <path d="M64 28 V7 M57 14 L64 7 L71 14"/>
+    <path d="M94 38 V23 M88 29 L94 23 L100 29"/>
+  </g>
+</svg>

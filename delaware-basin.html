@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Clay Wood's current research on the co-evolution of subsurface deformation and surface uplift in the Delaware Basin.">
+  <title>Subsurface Deformation &amp; Surface Uplift - Clay Wood</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header" aria-label="Primary navigation">
+      <a class="identity" href="index.html" aria-label="Clay Wood home">
+        <span class="identity__name">Clay Wood, PhD</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Toggle navigation</span>
+        <span></span><span></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav">
+        <a href="index.html#about">About</a>
+        <details class="nav-dropdown">
+          <summary aria-current="page">Research</summary>
+          <div class="nav-dropdown__menu">
+            <a href="research_highlights.html">Research Themes</a>
+            <a href="fractured-rock.html">Fractured rock</a>
+            <a href="reactive-transport-co2-storage.html">Reactive transport &amp; CO<sub>2</sub> Storage</a>
+            <a href="delaware-basin.html" aria-current="page">Subsurface Deformation &amp; Surface Uplift</a>
+            <a href="contact-line-dynamics.html">Contact-line Dynamics</a>
+          </div>
+        </details>
+        <a href="pubs.html">Publications</a>
+        <a href="posters.html">Conference Presentations</a>
+        <a href="cv.html">CV</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="archive-page theme-detail-page" aria-labelledby="theme-title">
+        <div class="basin-theme-hero">
+          <div class="archive-page__intro">
+            <p class="eyebrow">Current Research &middot; Delaware Basin</p>
+            <h1 id="theme-title">Subsurface Deformation &amp; Surface Uplift</h1>
+            <p class="hero__intro">My current work examines the co-evolution of subsurface deformation and surface uplift in the Delaware Basin.</p>
+          </div>
+          <figure class="basin-theme-figure">
+            <img src="delaware-basin-deformation.svg" alt="Conceptual cross-section of deformed subsurface layers and an uplifted surface, with arrows indicating upward motion." width="128" height="128">
+            <figcaption>Conceptual schematic</figcaption>
+          </figure>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.site-nav');
+
+    toggle?.addEventListener('click', () => {
+      const open = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!open));
+      nav.classList.toggle('is-open', !open);
+    });
+  </script>
+</body>
+</html>

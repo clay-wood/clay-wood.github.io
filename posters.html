@@ -1,82 +1,139 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conference Posters</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            color: #000;
-            line-height: 1.6;
-            margin: 30px;
-            padding: 20px;
-        }
-        .container {
-            width: 80%;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        a {
-            color: #007BFF;
-            text-decoration: underline;
-        }
-        header {
-            margin-bottom: 20px;
-        }
-        footer {
-            margin-top: 30px;
-            font-size: 0.9em;
-        }
-        iframe {
-            width: 100%;
-            height: 500px;
-            border: none;
-            margin-top: 10px;
-        }
-        /* Dark theme */
-        @media (prefers-color-scheme: dark) {
-            body {
-                background-color: #121212;
-                color: #ffffff;
-            }
-            nav ul li a {
-                color: #BB86FC;
-            }
-            nav ul li a:hover {
-                text-decoration: underline;
-            }
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Conference presentations and posters by Clay Wood.">
+  <title>Conference Presentations - Clay Wood</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Conference Posters</h1>
-            <p><a href="index.html">Back to Home</a></p>
-        </header>
+  <div class="site-shell">
+    <header class="site-header" aria-label="Primary navigation">
+      <a class="identity" href="index.html" aria-label="Clay Wood home">
+        <span class="identity__name">Clay Wood, PhD</span>
+      </a>
 
-        <section>
-            <h2>List of Conference Posters</h2>
-            <ul>
-                <li>
-                    <a href="posters/AGU24_poster_final.pdf">American Geophyscial Union 2024</a>
-                    <iframe src="posters/AGU24_poster_final.pdf"></iframe>
-                </li>
-                <li>
-                    <a href="posters/FractureAperture_poster_ClayEWood.pdf">European Geophyscial Union 2022</a>
-                    <iframe src="posters/FractureAperture_poster_ClayEWood.pdf"></iframe>
-                </li>
-                <!-- Add more posters as needed -->
-            </ul>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Toggle navigation</span>
+        <span></span><span></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav">
+        <a href="index.html#about">About</a>
+        <details class="nav-dropdown">
+          <summary>Research</summary>
+          <div class="nav-dropdown__menu">
+            <a href="research_highlights.html">Research Themes</a>
+            <a href="fractured-rock.html">Fractured rock</a>
+            <a href="reactive-transport-co2-storage.html">Reactive transport &amp; CO<sub>2</sub> Storage</a>
+            <a href="delaware-basin.html">Subsurface Deformation &amp; Surface Uplift</a>
+            <a href="contact-line-dynamics.html">Contact-line Dynamics</a>
+          </div>
+        </details>
+        <a href="pubs.html">Publications</a>
+        <a href="posters.html" aria-current="page">Conference Presentations</a>
+        <a href="cv.html">CV</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="archive-page" aria-labelledby="presentations-title">
+        <div class="archive-page__intro">
+          <p class="eyebrow">Conference Presentations</p>
+          <h1 id="presentations-title">Posters and Talks</h1>
+          <p class="hero__intro">
+            Conference presentations, poster PDFs, and visual research summaries.
+          </p>
+        </div>
+
+        <section class="poster-preview-grid" aria-label="Attached poster previews">
+          <article class="poster-preview">
+            <a class="archive-title-link" href="posters/AGU24_poster_final.pdf" target="_blank" rel="noopener">AGU 2024 Poster</a>
+            <object data="posters/AGU24_poster_final.pdf#view=FitH" type="application/pdf">
+              <p><a href="posters/AGU24_poster_final.pdf" target="_blank" rel="noopener">Open the AGU 2024 poster PDF</a>.</p>
+            </object>
+          </article>
+          <article class="poster-preview">
+            <a class="archive-title-link" href="posters/FractureAperture_poster_ClayEWood.pdf" target="_blank" rel="noopener">Fracture Aperture Poster</a>
+            <object data="posters/FractureAperture_poster_ClayEWood.pdf#view=FitH" type="application/pdf">
+              <p><a href="posters/FractureAperture_poster_ClayEWood.pdf" target="_blank" rel="noopener">Open the fracture aperture poster PDF</a>.</p>
+            </object>
+          </article>
         </section>
 
-        <footer>
-            <p>&copy; 2024 Clay Wood. All rights reserved.</p>
-        </footer>
-    </div>
+        <ol class="archive-list presentation-list">
+          <li>
+            <h2><a class="archive-title-link" href="posters/AGU24_poster_final.pdf" target="_blank" rel="noopener">AGU 2024 Poster</a></h2>
+            <p class="archive-list__meta"><strong>C. Wood</strong> &middot; 2024 &middot; American Geophysical Union &middot; Poster</p>
+          </li>
+          <li>
+            <h2>Decoupling the poromechanics of particle remobilization and interface stiffness of dynamically stressed tensile fractured rock</h2>
+            <p class="archive-list__meta"><strong>C. Wood</strong>, C. Ke, J. Riviere, D. Elsworth, C. Marone, P. Shokouhi &middot; 2023 &middot; European Geophysical Union &middot; Poster</p>
+          </li>
+          <li>
+            <h2>Decoupling the poromechanics of particle remobilization and interface stiffness of dynamically stressed tensile fractured rock</h2>
+            <p class="archive-list__meta"><strong>C. Wood</strong>, C. Ke, J. Riviere, D. Elsworth, C. Marone, P. Shokouhi &middot; 2022 &middot; American Geophysical Union Fall Meeting &middot; Poster</p>
+          </li>
+          <li>
+            <h2>Probing the micromechanical features of a fracture interface using a multi-physics approach: A numerical investigation relating asperity deformation with fluid flow</h2>
+            <p class="archive-list__meta"><strong>C. Wood</strong>, C. Ke, J. Riviere, D. Elsworth, C. Marone, P. Shokouhi &middot; 2022 &middot; Rock Deformation Gordon Research Conference &middot; Poster</p>
+          </li>
+          <li>
+            <h2>Probing the micromechanical features of a fracture interface using a multi-physics approach: A numerical investigation relating asperity deformation with fluid flow</h2>
+            <p class="archive-list__meta">C. Wood, C. Ke, J. Riviere, D. Elsworth, C. Marone, P. Shokouhi &middot; 2022 &middot; European Geophysical Union &middot; Talk</p>
+          </li>
+          <li>
+            <h2>Relating fracture aperture to hydraulic and elastodynamic properties of dynamically-stressed rock under true-triaxial stress conditions</h2>
+            <p class="archive-list__meta"><strong>C. Wood</strong>, P. Manogharan, J. Rivi&egrave;re, D. Ellsworth, C. Marone, P. Shokouhi &middot; 2021 &middot; American Geophysical Union Fall Meeting &middot; Talk</p>
+          </li>
+          <li>
+            <h2><a class="archive-title-link" href="posters/FractureAperture_poster_ClayEWood.pdf" target="_blank" rel="noopener">Relating fracture aperture to hydraulic and elastodynamic properties of dynamically-stressed rock under true-triaxial stress conditions</a></h2>
+            <p class="archive-list__meta"><strong>C. Wood</strong>, P. Manogharan, J. Rivi&egrave;re, D. Ellsworth, C. Marone, P. Shokouhi &middot; 2021 &middot; The Physics of Earthquake Faulting &middot; Poster</p>
+          </li>
+          <li>
+            <h2>The relation between fracture aperture and hydro-mechanical properties: An experimental and analytical approach</h2>
+            <p class="archive-list__meta"><strong>C. Wood</strong>, P. Manogharan, S. Zi, J. Rivi&egrave;re, D. Ellsworth, C. Marone, P. Shokouhi &middot; 2020 &middot; American Geophysical Union Fall Meeting &middot; Poster</p>
+          </li>
+          <li>
+            <h2>The influence of fracture aperture on permeability and elastic nonlinearity: An integrated analytical and empirical investigation</h2>
+            <p class="archive-list__meta"><strong>C. Wood</strong>, P. Manogharan, J. Jin, J. Rivi&egrave;re, D. Ellsworth, C. Marone, P. Shokouhi &middot; 2019 &middot; American Geophysical Union Fall Meeting &middot; Talk</p>
+          </li>
+          <li>
+            <h2>The effect of roughness on the elasticity and permeability of fractured media</h2>
+            <p class="archive-list__meta"><strong>C. Wood</strong>, B. Madera, P. Shokouhi, J. Jin, J. Rivi&egrave;re, D. Ellsworth, C. Marone &middot; 2019 &middot; Schatzalp 3rd Induced Seismicity Workshop &middot; Poster</p>
+          </li>
+          <li>
+            <h2>The effect of roughness on the elasticity and permeability of fractured media</h2>
+            <p class="archive-list__meta"><strong>C. Wood</strong>, B. Madera, P. Shokouhi, J. Jin, J. Rivi&egrave;re, D. Ellsworth, C. Marone &middot; 2018 &middot; American Geophysical Union Fall Meeting &middot; Poster</p>
+          </li>
+          <li>
+            <h2>The effect of roughness on the elasticity and permeability of fractured media</h2>
+            <p class="archive-list__meta"><strong>C. Wood</strong>, B. Madera, P. Shokouhi, J. Jin, J. Rivi&egrave;re, D. Ellsworth, C. Marone &middot; 2018 &middot; International School of Physics, Enrico Fermi &middot; Poster</p>
+          </li>
+          <li>
+            <h2>Liquid "coffee rings" and the spreading of volatile liquid mixtures</h2>
+            <p class="archive-list__meta"><strong>C. Wood</strong>, J. Pye, J. Burton &middot; 2017 &middot; American Physical Society March Meeting &middot; Talk</p>
+          </li>
+          <li>
+            <h2>Quantifying stick-slip contact line motion of evaporating sessile droplets</h2>
+            <p class="archive-list__meta"><strong>C. Wood</strong>, J. Pye, J. Burton &middot; 2016 &middot; American Physical Society March Meeting &middot; Talk</p>
+          </li>
+        </ol>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.site-nav');
+
+    toggle?.addEventListener('click', () => {
+      const open = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!open));
+      nav.classList.toggle('is-open', !open);
+    });
+  </script>
 </body>
 </html>
-

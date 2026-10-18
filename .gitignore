@@ -1,15 +1,10 @@
-# project
-_site
-.sass-cache
-.vagrant
+# Old website retained only on this computer
+/archive/
 
-# general
+# Local system and development files
 .DS_Store
 Thumbs.db
 ehthumbs.db
-_posts/
-README.md
-
-Gemfile.lock
-
-beautiful-jekyll-theme-*.gem
+.venv/
+__pycache__/
+*.pyc
