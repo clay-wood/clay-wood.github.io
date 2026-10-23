@@ -346,6 +346,23 @@ svg {
   padding-right: 0;
 }
 
+.software-section {
+  border-bottom: 1px solid var(--rule);
+}
+
+.software-section .overview-column {
+  max-width: 780px;
+  padding-right: 0;
+}
+
+.software-section .research-resource-links {
+  margin-top: 6px;
+}
+
+.research-highlight .contact-list--page {
+  margin-top: 22px;
+}
+
 .section-heading {
   margin-bottom: 17px;
 }

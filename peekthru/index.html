@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Peekthru is a read-only Mac viewer and Finder Quick Look extension for Python, Julia, Markdown, Jupyter notebooks, and HDF5.">
+  <title>Peekthru — Clay Wood</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header" aria-label="Primary navigation">
+      <a class="identity" href="../index.html" aria-label="Clay Wood home">
+        <span class="identity__name">Clay Wood, PhD</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Toggle navigation</span>
+        <span></span><span></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav">
+        <a href="../index.html#about">About</a>
+        <details class="nav-dropdown">
+          <summary>Research</summary>
+          <div class="nav-dropdown__menu">
+            <a href="../research_highlights.html">Research Themes</a>
+            <a href="../fractured-rock.html">Fractured rock</a>
+            <a href="../reactive-transport-co2-storage.html">Reactive transport &amp; CO<sub>2</sub> Storage</a>
+            <a href="../delaware-basin.html">Subsurface Deformation &amp; Surface Uplift</a>
+            <a href="../contact-line-dynamics.html">Contact-line Dynamics</a>
+          </div>
+        </details>
+        <a href="../pubs.html">Publications</a>
+        <a href="../posters.html">Conference Presentations</a>
+        <a href="../index.html#software" aria-current="page">Software</a>
+        <a href="../cv.html">CV</a>
+        <a href="../contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="archive-page" aria-labelledby="peekthru-title">
+        <div class="archive-page__intro">
+          <p class="eyebrow">Software</p>
+          <h1 id="peekthru-title">Peekthru</h1>
+          <p class="hero__intro">
+            A local Mac viewer and Finder Quick Look extension for Python, Julia, Markdown, Jupyter notebooks, and HDF5. Peekthru works offline and does not execute code.
+          </p>
+          <div class="research-resource-links">
+            <a class="section-link" href="https://apps.apple.com/us/app/peekthru/id6821726970?mt=12">App Store <span aria-hidden="true">→</span></a>
+            <a class="section-link" href="support.html">Support <span aria-hidden="true">→</span></a>
+            <a class="section-link" href="privacy.html">Privacy <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+
+        <div class="fracture-copy">
+          <article class="research-highlight">
+            <h3>Available now</h3>
+            <p>
+              Peekthru is available on the Mac App Store for $2.99. It requires macOS 14 or later and runs on Apple Silicon and Intel Macs. There is no subscription.
+            </p>
+          </article>
+
+          <article class="research-highlight">
+            <h3>What it does</h3>
+            <ul class="simple-bullets">
+              <li>Finder Quick Look previews for .py, .jl, .md, .markdown, .ipynb, .h5, and .hdf5 files.</li>
+              <li>A native, read-only viewer with Find, adjustable text size, and recent files.</li>
+              <li>Python and Julia source with syntax highlighting.</li>
+              <li>Markdown with rendered formulas and a heading navigator.</li>
+              <li>Jupyter notebooks (nbformat 4), including saved text, images, and mathematical expressions.</li>
+              <li>HDF5 groups, dataset metadata, path search, and selected slices. Displayed values can be copied as TSV.</li>
+              <li>Local mathematical rendering. Reload is manual when a file changes.</li>
+              <li>Some HDF5 datatypes and compression filters are unsupported. Notebooks show saved outputs rather than interactive widgets, and previews use size limits.</li>
+            </ul>
+          </article>
+
+          <article class="research-highlight">
+            <h3>Support</h3>
+            <p>
+              Setup and troubleshooting are on the <a class="archive-title-link" href="support.html">support page</a>. A small synthetic example is preferable to a private or large research file.
+            </p>
+            <address class="contact-list contact-list--page">
+              <a href="mailto:clayewood@gmail.com">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 5.5h17v13h-17zM4 6l8 7 8-7"></path></svg>
+                <span>clayewood@gmail.com</span>
+                <span aria-hidden="true">&rarr;</span>
+              </a>
+            </address>
+          </article>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.site-nav');
+
+    toggle?.addEventListener('click', () => {
+      const open = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!open));
+      nav.classList.toggle('is-open', !open);
+    });
+  </script>
+</body>
+</html>
