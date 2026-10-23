@@ -33,7 +33,12 @@
         </details>
         <a href="../pubs.html">Publications</a>
         <a href="../posters.html">Conference Presentations</a>
-        <a href="../index.html#software" aria-current="page">Software</a>
+        <details class="nav-dropdown">
+          <summary aria-current="page">Software</summary>
+          <div class="nav-dropdown__menu">
+            <a href="index.html" aria-current="page">Peekthru</a>
+          </div>
+        </details>
         <a href="../cv.html">CV</a>
         <a href="../contact.html">Contact</a>
       </nav>
@@ -41,27 +46,18 @@
 
     <main>
       <section class="archive-page" aria-labelledby="peekthru-title">
-        <div class="archive-page__intro">
-          <p class="eyebrow">Software</p>
-          <h1 id="peekthru-title">Peekthru</h1>
-          <p class="hero__intro">
-            A local Mac viewer and Finder Quick Look extension for Python, Julia, Markdown, Jupyter notebooks, and HDF5. Peekthru works offline and does not execute code.
-          </p>
-          <div class="research-resource-links">
-            <a class="section-link" href="https://apps.apple.com/us/app/peekthru/id6821726970?mt=12">App Store <span aria-hidden="true">→</span></a>
-            <a class="section-link" href="support.html">Support <span aria-hidden="true">→</span></a>
-            <a class="section-link" href="privacy.html">Privacy <span aria-hidden="true">→</span></a>
+        <div class="archive-page__intro product-intro">
+          <div class="product-intro__copy">
+            <p class="eyebrow">Software</p>
+            <h1 id="peekthru-title">Peekthru</h1>
+            <p class="hero__intro">
+              A local Mac viewer and Finder Quick Look extension for Python, Julia, Markdown, Jupyter notebooks, and HDF5. Peekthru works offline and does not execute code.
+            </p>
           </div>
+          <img class="product-icon" src="assets/icon-512.png" width="512" height="512" alt="Peekthru app icon">
         </div>
 
         <div class="fracture-copy">
-          <article class="research-highlight">
-            <h3>Available now</h3>
-            <p>
-              Peekthru is available on the Mac App Store for $2.99. It requires macOS 14 or later and runs on Apple Silicon and Intel Macs. There is no subscription.
-            </p>
-          </article>
-
           <article class="research-highlight">
             <h3>What it does</h3>
             <ul class="simple-bullets">
@@ -74,6 +70,30 @@
               <li>Local mathematical rendering. Reload is manual when a file changes.</li>
               <li>Some HDF5 datatypes and compression filters are unsupported. Notebooks show saved outputs rather than interactive widgets, and previews use size limits.</li>
             </ul>
+          </article>
+
+          <div class="product-shots">
+            <figure>
+              <img src="assets/screenshot-notebook.jpg" width="1600" height="1000" alt="Jupyter notebook open in Peekthru">
+              <figcaption>Notebook</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/screenshot-hdf5.jpg" width="1600" height="1000" alt="HDF5 dataset open in Peekthru">
+              <figcaption>HDF5</figcaption>
+            </figure>
+          </div>
+
+          <div class="research-resource-links product-links">
+            <a class="section-link" href="https://apps.apple.com/us/app/peekthru/id6821726970?mt=12">App Store <span aria-hidden="true">→</span></a>
+            <a class="section-link" href="support.html">Support <span aria-hidden="true">→</span></a>
+            <a class="section-link" href="privacy.html">Privacy <span aria-hidden="true">→</span></a>
+          </div>
+
+          <article class="research-highlight">
+            <h3>Available now</h3>
+            <p>
+              Peekthru is available on the Mac App Store for $2.99. It requires macOS 14 or later and runs on Apple Silicon and Intel Macs. There is no subscription.
+            </p>
           </article>
 
           <article class="research-highlight">
