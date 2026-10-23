@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Support for Peekthru: Quick Look setup, common issues, and how to report a problem.">
+  <title>Peekthru support — Clay Wood</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header" aria-label="Primary navigation">
+      <a class="identity" href="../index.html" aria-label="Clay Wood home">
+        <span class="identity__name">Clay Wood, PhD</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Toggle navigation</span>
+        <span></span><span></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav">
+        <a href="../index.html#about">About</a>
+        <details class="nav-dropdown">
+          <summary>Research</summary>
+          <div class="nav-dropdown__menu">
+            <a href="../research_highlights.html">Research Themes</a>
+            <a href="../fractured-rock.html">Fractured rock</a>
+            <a href="../reactive-transport-co2-storage.html">Reactive transport &amp; CO<sub>2</sub> Storage</a>
+            <a href="../delaware-basin.html">Subsurface Deformation &amp; Surface Uplift</a>
+            <a href="../contact-line-dynamics.html">Contact-line Dynamics</a>
+          </div>
+        </details>
+        <a href="../pubs.html">Publications</a>
+        <a href="../posters.html">Conference Presentations</a>
+        <a href="../index.html#software" aria-current="page">Software</a>
+        <a href="../cv.html">CV</a>
+        <a href="../contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="archive-page" aria-labelledby="support-title">
+        <div class="archive-page__intro">
+          <p class="eyebrow">Peekthru</p>
+          <h1 id="support-title">Support</h1>
+          <p class="hero__intro">
+            Peekthru supports Python, Julia, Markdown, nbformat 4 Jupyter notebooks, and HDF5 on Apple Silicon and Intel Macs running macOS 14 or later.
+          </p>
+          <div class="research-resource-links">
+            <a class="section-link" href="index.html">Peekthru <span aria-hidden="true">→</span></a>
+            <a class="section-link" href="https://apps.apple.com/us/app/peekthru/id6821726970?mt=12">App Store <span aria-hidden="true">→</span></a>
+            <a class="section-link" href="privacy.html">Privacy <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+
+        <div class="fracture-copy">
+          <article class="research-highlight" id="quick-look">
+            <h3>Quick Look setup</h3>
+            <p>
+              Move Peekthru to Applications, open it once, and use Help → Peekthru Help &amp; Quick Look Setup. Enable the extension in System Settings. If another preview extension handles the same format, check the enabled extensions; opening defaults are separate from preview selection.
+            </p>
+          </article>
+
+          <article class="research-highlight" id="common-issues">
+            <h3>Common issues</h3>
+            <ul class="simple-bullets">
+              <li>A limit notice means the preview is intentionally bounded. Open the file in Peekthru for richer inspection.</li>
+              <li>Unsupported HDF5 datatypes and compression filters may prevent value previews. Metadata can still be available. External links and external/virtual dataset storage are deliberately not read.</li>
+              <li>The HDF5 table displays a selected hyperslab rather than loading a complete large dataset. Indices are zero-based.</li>
+              <li>Find searches visible notebook content. Reveal outputs or metadata using the notebook toolbar, and reveal per-cell outputs in the cell outline.</li>
+              <li>Reload with Command-R if a producing application updates or replaces a file. Automatic reload is intentionally avoided while you inspect content.</li>
+              <li>Unsupported formulas remain source text. Math requires no network connection.</li>
+              <li>If a recent file moved or lost its permission, select it again through Open.</li>
+            </ul>
+          </article>
+
+          <article class="research-highlight" id="reporting">
+            <h3>Reporting a problem</h3>
+            <p>
+              Include Peekthru version, macOS version, processor type, format, and reproduction steps. A small synthetic example is preferable to private or large research files. State whether the issue occurs in the application, Finder Quick Look, or both.
+            </p>
+            <address class="contact-list contact-list--page">
+              <a href="mailto:clayewood@gmail.com">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 5.5h17v13h-17zM4 6l8 7 8-7"></path></svg>
+                <span>clayewood@gmail.com</span>
+                <span aria-hidden="true">&rarr;</span>
+              </a>
+            </address>
+          </article>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.site-nav');
+
+    toggle?.addEventListener('click', () => {
+      const open = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!open));
+      nav.classList.toggle('is-open', !open);
+    });
+  </script>
+</body>
+</html>
