@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Huevat: scientific color palettes and gradients for Matplotlib, Plotly and UltraPlot. Installation, plotting examples, named gradients, and figure doctor.">
+  <title>Huevat - Clay Wood</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header" aria-label="Primary navigation">
+      <a class="identity" href="index.html" aria-label="Clay Wood home">
+        <span class="identity__name">Clay Wood, PhD</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Toggle navigation</span>
+        <span></span><span></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav">
+        <a href="index.html#about">About</a>
+        <details class="nav-dropdown">
+          <summary>Research</summary>
+          <div class="nav-dropdown__menu">
+            <a href="research_highlights.html">Research Themes</a>
+            <a href="fractured-rock.html">Fractured rock</a>
+            <a href="reactive-transport-co2-storage.html">Reactive transport &amp; CO<sub>2</sub> Storage</a>
+            <a href="delaware-basin.html">Subsurface Deformation &amp; Surface Uplift</a>
+            <a href="contact-line-dynamics.html">Contact-line Dynamics</a>
+          </div>
+        </details>
+        <a href="pubs.html">Publications</a>
+        <a href="posters.html">Conference Presentations</a>
+        <a href="cv.html">CV</a>
+        <details class="nav-dropdown">
+          <summary>Software</summary>
+          <div class="nav-dropdown__menu">
+            <a href="">Software</a>
+            <a href="huevat.html">huevat</a>
+            <a href="Peekthru.html">Peekthru</a>
+          </div>
+        </details>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="archive-page software-page" aria-labelledby="software-title">
+        <div class="archive-page__intro">
+          <p class="eyebrow">Software</p>
+          <h1 id="software-title">Huevat</h1>
+          <p class="hero__intro">Scientific color palettes and gradients for <strong>Matplotlib, Plotly and UltraPlot</strong>. Choose colors for categories, continuous fields, or values above and below a center.</p>
+          <a class="text-link" href="https://github.com/clay-wood/huevat">View on GitHub <span aria-hidden="true">↗</span></a>
+        </div>
+
+        <!-- Content adapted from https://github.com/clay-wood/huevat/blob/main/README.md -->
+        <div class="software-readme">
+<p><img src="huevat-figures/palettes.png" width="1920" height="729" alt="Clearer categorical palettes and the four default gradients on light and dark backgrounds"></p>
+<p>Clearer is the default categorical palette. Use <code>background=&quot;dark&quot;</code> for dark figures.</p>
+<p><a href="https://github.com/clay-wood/huevat/blob/main/docs/QUICKSTART.md">Quick start</a> · <a href="https://github.com/clay-wood/huevat/blob/main/examples/README.md">Plotting examples</a> ·
+<a href="https://github.com/clay-wood/huevat/blob/main/docs/FIGURE_DOCTOR.md">Figure doctor</a> · <a href="https://github.com/clay-wood/huevat/blob/main/docs/API.md">API guide</a> ·
+<a href="https://github.com/clay-wood/huevat/blob/main/docs/RELEASE_NOTES.md">Release notes</a></p>
+<h2 id="recent-updates">Recent updates</h2>
+<ul>
+<li><strong>18 named gradients</strong>, including six new choices: <strong>Cobalt, Copper, Dusk,
+Orchid, Tundra and Verdant</strong>, each with light and dark versions.</li>
+<li><strong>Revised Aerosol, Bathymetry and Thermal</strong> to distinguish the reported
+lookalike routes. Earlier versions remain available through their saved
+recipes and immutable design IDs.</li>
+<li><strong>Nine colors by default</strong> with <code>gradient.discrete()</code>. Diverging and Spectral
+gradients include the exact neutral as the fifth color. Explicit even counts
+are supported and omit the midpoint.</li>
+<li><strong>Named suffixes:</strong> <code>_r</code> reverses, <code>_d</code> selects dark, and <code>_d_r</code> or <code>_r_d</code>
+combines both.</li>
+</ul>
+<p>All eighteen named gradients are supported. Numerical screening results and
+usage guidance are available in the methods documentation.
+See the <a href="https://github.com/clay-wood/huevat/blob/main/docs/RELEASE_NOTES.md">release notes</a>
+and <a href="https://github.com/clay-wood/huevat/blob/main/docs/RELEASE.md">installation and release guide</a>.</p>
+<h2 id="install">Install</h2>
+<p>Install Huevat from PyPI with your plotting library:</p>
+<pre><code class="language-sh">python -m pip install &quot;huevat[matplotlib]&quot;
+python -m pip install &quot;huevat[plotly]&quot;
+python -m pip install &quot;huevat[ultraplot]&quot;
+</code></pre>
+<p>Requires Python 3.10+. For colors alone, use <code>python -m pip install huevat</code>.</p>
+<h2 id="make-a-plot">Make a plot</h2>
+<pre><code class="language-python">import numpy as np
+import matplotlib.pyplot as plt
+import huevat as hv
+from huevat.adapters import matplotlib as hmpl
+
+xx, yy = np.meshgrid(np.linspace(-3, 3, 160), np.linspace(-2, 2, 100))
+field = (8 * np.exp(-((xx - .7)**2 + (yy - .1)**2))
+         - 2 * np.exp(-((xx + 1.1)**2 + (yy + .2)**2) / .4))
+gradient = hv.diverging()
+nine_colors = gradient.discrete()  # default: 9, including the neutral midpoint
+boundaries = [-2, -1.5, -1, -.5, -.1, .1, 1, 2, 4, 8]
+palette = hv.categorical(5)
+
+fig, axes = plt.subplots(1, 3, figsize=(12, 3.5), layout=&quot;constrained&quot;)
+continuous = axes[0].imshow(field, cmap=hmpl.colormap(gradient), origin=&quot;lower&quot;,
+                            norm=hmpl.normalizer(-2, 8, center=0))
+discrete = axes[1].imshow(field, cmap=hmpl.colormap(nine_colors), origin=&quot;lower&quot;,
+                          norm=hmpl.boundary_normalizer(nine_colors, boundaries))
+axes[0].set_title(&quot;Continuous · zero at neutral&quot;)
+axes[1].set_title(&quot;9 colors · neutral bin around zero&quot;)
+fig.colorbar(continuous, ax=axes[0], orientation=&quot;horizontal&quot;)
+fig.colorbar(discrete, ax=axes[1], orientation=&quot;horizontal&quot;)
+
+axes[2].set_prop_cycle(hmpl.cycle(palette, markers=[&quot;o&quot;, &quot;s&quot;, &quot;^&quot;, &quot;D&quot;, &quot;v&quot;],
+                                 linestyles=[&quot;-&quot;, &quot;--&quot;, &quot;:&quot;, &quot;-.&quot;, &quot;-&quot;]))
+x = np.linspace(0, 1, 25)
+for i, label in enumerate([&quot;Blue&quot;, &quot;Teal&quot;, &quot;Ochre&quot;, &quot;Coral&quot;, &quot;Purple&quot;]):
+    axes[2].plot(x, .12 * i + .08 * np.sin(2 * np.pi * x + i / 2),
+                 label=label, markevery=4)
+axes[2].set_title(&quot;Clearer · specified markers and dashes&quot;)
+axes[2].legend(fontsize=8, loc=&quot;upper right&quot;)
+plt.show()
+</code></pre>
+<p>For a field, pass <code>hmpl.colormap(hv.sequential())</code> to <code>imshow</code> or <code>pcolormesh</code>.
+Use <code>hv.diverging()</code> with <code>hmpl.normalizer(vmin, vmax, center=0)</code> for signed data.
+The discrete example uses nine colors, with zero inside the neutral bin
+from −0.1 to +0.1. Choose bin boundaries to suit your data.</p>
+<p><img src="huevat-figures/matplotlib-light.png" width="2160" height="630" alt="Continuous signed field, nine-bin diverging field with a neutral center, and categorical lines" loading="lazy"></p>
+<p><a href="https://github.com/clay-wood/huevat/blob/main/examples/README.md">See complete examples for all three plotting libraries.</a></p>
+<h2 id="more-gradients">More gradients</h2>
+<p>Eighteen additional gradients cover general plots, seismic data, terrain, depth,
+and atmospheric fields, with supported light and dark variants.</p>
+<p><img src="huevat-figures/gradients.png" width="1920" height="1662" alt="The eighteen named gradients on light and dark backgrounds" loading="lazy"></p>
+<pre><code class="language-python">gradient = hv.gradient(&quot;bathymetry&quot;)
+new_gradient = hv.gradient(&quot;verdant&quot;)
+reversed_gradient = hv.gradient(&quot;thermal_r&quot;)
+dark_gradient = hv.gradient(&quot;thermal_d&quot;)
+dark_reversed_gradient = hv.gradient(&quot;thermal_d_r&quot;)
+print(hv.gradient_names())
+</code></pre>
+<p>The revised routes are:</p>
+<div class="software-table">
+<table>
+<thead>
+<tr>
+<th>Gradient</th>
+<th>Current route</th>
+<th>Previously similar to</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Aerosol</td>
+<td>Deep red → magenta → pale violet</td>
+<td>Rosewood</td>
+</tr>
+<tr>
+<td>Bathymetry</td>
+<td>Pale cyan → turquoise → deep ocean, darkening with depth</td>
+<td>Mineral</td>
+</tr>
+<tr>
+<td>Thermal</td>
+<td>Violet → neutral → green</td>
+<td>Balance</td>
+</tr>
+</tbody></table>
+</div>
+<p>Append <code>_r</code> to reverse a named gradient or <code>_d</code> to select its dark version;
+combine them as <code>_d_r</code> or <code>_r_d</code>. <code>gradient.reversed()</code> also changes direction.
+<code>_d</code> is equivalent to <code>background=&quot;dark&quot;</code>; combining it with an explicit
+<code>background=&quot;light&quot;</code> is an error.</p>
+<p>For separate colors, <code>gradient.discrete()</code> selects nine bins. Diverging scales
+include their neutral midpoint; explicit even counts remain available.</p>
+<pre><code class="language-python">signed = hv.diverging()
+nine_colors = signed.discrete()  # neutral is nine_colors.colors[4]
+assert nine_colors.colors[4] == hv.to_hex(signed.at(0.5))
+</code></pre>
+<p>Check <code>hv.known_counts(gradient)</code> for tested counts.
+<code>hv.optimized_discrete(gradient, n)</code> searches for better-spaced colors and
+requires the <code>design</code> extra.</p>
+<p><img src="huevat-figures/gradient-bins.png" width="1920" height="644" alt="Nine-bin diverging gradients with a visible neutral midpoint" loading="lazy"></p>
+<h2 id="figure-doctor">Figure doctor</h2>
+<p>Coordinate colors, markers and dashes in an existing figure. Repeated labels
+keep the same style across panels.</p>
+<div class="software-table">
+<table>
+<thead>
+<tr>
+<th>Before</th>
+<th>After</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="huevat-figures/matplotlib-light-before.png" width="1600" height="560" alt="Original figure with similar colors" loading="lazy"></td>
+<td><img src="huevat-figures/matplotlib-light-separation.png" width="1600" height="560" alt="Figure doctor proposal with distinct colors, markers and dashes" loading="lazy"></td>
+</tr>
+</tbody></table>
+</div>
+<p>Install with <code>python -m pip install &quot;huevat[design,matplotlib]&quot;</code>, or replace
+<code>matplotlib</code> with <code>plotly</code> or <code>ultraplot</code>.</p>
+<pre><code class="language-python">from huevat import doctor
+
+scene = doctor.inspect(fig)
+closer, separation, simple = doctor.propose(scene)
+preview = doctor.preview(fig, separation)
+change = doctor.apply(fig, separation)
+change.undo()
+</code></pre>
+<p><a href="https://github.com/clay-wood/huevat/blob/main/docs/FIGURE_DOCTOR.md">Figure doctor guide</a> explains previews, fixed colors and
+keeping styles across figures. Review the result at the size you intend to use.</p>
+<h2 id="save-colors">Save colors</h2>
+<pre><code class="language-python">hv.export(palette).write(&quot;palette.json&quot;)
+restored = hv.load_export(open(&quot;palette.json&quot;, encoding=&quot;utf-8&quot;).read()).design
+hv.export(hv.diverging(), n=7, format=&quot;csv&quot;).write(&quot;colors.csv&quot;)
+</code></pre>
+<p>JSON saves a design for reuse. CSV and hex give you color lists; CSS is also
+available. See the <a href="https://github.com/clay-wood/huevat/blob/main/docs/QUICKSTART.md">quick start</a> for labels and more examples.</p>
+        </div>
+        <p class="software-source">Adapted from the <a href="https://github.com/clay-wood/huevat/blob/main/README.md">Huevat README</a>. Visit GitHub for the latest documentation.</p>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.site-nav');
+
+    toggle?.addEventListener('click', () => {
+      const open = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!open));
+      nav.classList.toggle('is-open', !open);
+    });
+  </script>
+</body>
+</html>
